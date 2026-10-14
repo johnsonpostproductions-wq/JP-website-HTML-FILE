@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recent Work | Johnson Production</title>
+    <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/aos.css" />
+    <link rel="stylesheet" href="assets/fonts/remixicon/remixicon.css" />
+    <link rel="stylesheet" href="assets/fonts/satoshi/satoshi.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+    <main>
+        <section class="section-work pt-120 pb-150">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-lg-auto">
+                        <div class="text-center">
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a href="index-1RR.html#portfolio" class="btn btn-gradient text-uppercase">Back</a>
+                                <div id="selected-category" class="btn btn-gradient d-inline-block text-uppercase">Recent Work</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="work-carousel mt-8 card-scroll">
+                        <div class="cards" id="work-slides" tabindex="0" aria-label="Recent work slideshow">
+                            <div class="card-custom work-slide"><div class="card__inner bg-6 p-lg-6 p-md-4 p-3"><div class="card__image-container zoom-img position-relative"><img class="card__image" src="assets/imgs/work/img-1.png" alt="E-commerce website redesign" /></div><div class="card__content px-md-4 px-3"><div class="card__title mb-0 mb-lg-2"><p class="text-primary mb-0 mb-md-2">UI/UX</p><h2 class="fw-semibold">E-commerce Website Redesign</h2></div><p class="text-300 mb-lg-auto mb-md-4 mb-3">An interactive shopping experience with intuitive navigation and engaging interface design.</p><div class="d-md-flex content"><p class="mb-0 fs-7 text-dark text-uppercase w-40">Client</p><p class="mb-0 card__description text-300 fs-6">Conceptual JSC</p></div><div class="d-md-flex content"><p class="mb-0 fs-7 text-dark text-uppercase w-40">Tools</p><p class="mb-0 card__description text-300 fs-6">Figma, Sketch, Photoshop, Framer</p></div></div></div></div>
+                            <div class="card-custom work-slide"><div class="card__inner bg-6 p-lg-6 p-md-4 p-3"><div class="card__image-container zoom-img position-relative"><img class="card__image" src="assets/imgs/work/img-2.png" alt="Fitness app UI/UX" /></div><div class="card__content px-md-4 px-3"><div class="card__title mb-0 mb-lg-2"><p class="text-primary mb-0 mb-md-2">APP DESIGN</p><h2 class="fw-semibold">Fitness App UI/UX</h2></div><p class="text-300 mb-lg-auto mb-md-4 mb-3">A focused mobile experience designed to make healthy routines easier to follow.</p><div class="d-md-flex content"><p class="mb-0 fs-7 text-dark text-uppercase w-40">Client</p><p class="mb-0 card__description text-300 fs-6">Conceptual JSC</p></div><div class="d-md-flex content"><p class="mb-0 fs-7 text-dark text-uppercase w-40">Tools</p><p class="mb-0 card__description text-300 fs-6">Figma, Sketch, Photoshop, Framer</p></div></div></div></div>
+                            <div class="card-custom work-slide"><div class="card__inner bg-6 p-lg-6 p-md-4 p-3"><div class="card__image-container zoom-img position-relative"><img class="card__image" src="assets/imgs/work/img-3.png" alt="Travel booking platform" /></div><div class="card__content px-md-4 px-3"><div class="card__title mb-0 mb-lg-2"><p class="text-primary mb-0 mb-md-2">WEB DEVELOPMENT</p><h2 class="fw-semibold">Travel Booking Platform</h2></div><p class="text-300 mb-lg-auto mb-md-4 mb-3">A streamlined platform that makes discovering and booking a trip feel effortless.</p><div class="d-md-flex content"><p class="mb-0 fs-7 text-dark text-uppercase w-40">Client</p><p class="mb-0 card__description text-300 fs-6">Conceptual JSC</p></div><div class="d-md-flex content"><p class="mb-0 fs-7 text-dark text-uppercase w-40">Tools</p><p class="mb-0 card__description text-300 fs-6">Figma, Sketch, Photoshop, Framer</p></div></div></div></div>
+                            <div class="card-custom work-slide"><div class="card__inner bg-6 p-lg-6 p-md-4 p-3"><div class="card__image-container zoom-img position-relative"><img class="card__image" src="assets/imgs/work/img-4.png" alt="Educational platform UI/UX" /></div><div class="card__content px-md-4 px-3"><div class="card__title mb-0 mb-lg-2"><p class="text-primary mb-0 mb-md-2">VISUAL DESIGN</p><h2 class="fw-semibold">Educational Platform UI/UX</h2></div><p class="text-300 mb-lg-auto mb-md-4 mb-3">An accessible learning platform built around clear content, intuitive navigation, and student engagement.</p><div class="d-md-flex content"><p class="mb-0 fs-7 text-dark text-uppercase w-40">Client</p><p class="mb-0 card__description text-300 fs-6">Conceptual JSC</p></div><div class="d-md-flex content"><p class="mb-0 fs-7 text-dark text-uppercase w-40">Tools</p><p class="mb-0 card__description text-300 fs-6">Figma, Sketch, Photoshop, Framer</p></div></div></div></div>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center gap-3 mt-4">
+                            <button class="btn btn-gradient" type="button" id="previous-slide" aria-label="Previous project">Previous</button>
+                            <span id="slide-count" aria-live="polite">1 / 4</span>
+                            <button class="btn btn-gradient" type="button" id="next-slide" aria-label="Next project">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        const categoryLabels = {
+            cinematography: "🎥 Cinematography",
+            photography: "📸 Photography",
+            "post-production": "✂️ Post-Production",
+            "motion-vfx": "✨ Motion & VFX",
+            "colour-grading": "🎨 Colour Grading",
+            "brand-design": "🖌️ Brand Design",
+            "web-design": "🌐 Web Design",
+            "product-visuals": "📦 Product Visuals",
+            "ai-creative": "🤖 AI Creative",
+        };
+        const category = new URLSearchParams(window.location.search).get("category");
+        const categoryLabel = categoryLabels[category];
+        if (categoryLabel) {
+            document.getElementById("selected-category").textContent = categoryLabel;
+            document.title = `${categoryLabel} | Recent Work | Johnson Production`;
+        }
+
+        const cardsContainer = document.getElementById("work-slides");
+        const slideItems = Array.from(cardsContainer.querySelectorAll(".work-slide"));
+        const slideCount = document.getElementById("slide-count");
+        const previousButton = document.getElementById("previous-slide");
+        const nextButton = document.getElementById("next-slide");
+        const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+        let cardTops = [];
+        let scrollScheduled = false;
+
+        function measureCards() {
+            const cardHeight = slideItems[0].clientHeight;
+            cardsContainer.style.setProperty("--cards-count", slideItems.length);
+            cardsContainer.style.setProperty("--card-height", `${cardHeight}px`);
+            slideItems.forEach((card, index) => {
+                card.style.paddingTop = `${20 + index * 20}px`;
+            });
+            cardTops = slideItems.map((card) => card.offsetTop);
+            updateScrollEffects();
+        }
+
+        function getActiveIndex() {
+            let activeIndex = 0;
+            for (let index = 1; index < cardTops.length; index += 1) {
+                if (cardTops[index] > window.scrollY + 40) break;
+                activeIndex = index;
+            }
+            return activeIndex;
+        }
+
+        function updateScrollEffects() {
+            const activeIndex = getActiveIndex();
+            slideCount.textContent = `${activeIndex + 1} / ${slideItems.length}`;
+            previousButton.disabled = activeIndex === 0;
+            nextButton.disabled = activeIndex === slideItems.length - 1;
+
+            slideItems.forEach((card, index) => {
+                const cardInner = card.querySelector(".card__inner");
+                if (reducedMotion.matches || index === slideItems.length - 1) {
+                    cardInner.style.scale = "1";
+                    cardInner.style.filter = "none";
+                    return;
+                }
+
+                const nextCardTop = cardTops[index + 1];
+                const stickyOffset = 20 + index * 20;
+                const animationStart = nextCardTop - window.innerHeight;
+                const animationEnd = nextCardTop - stickyOffset;
+                const progress = Math.max(0, Math.min(1, (window.scrollY - animationStart) / (animationEnd - animationStart)));
+                const targetScale = 1 - (slideItems.length - 1 - index) * 0.1;
+                cardInner.style.scale = `${1 + (targetScale - 1) * progress}`;
+                cardInner.style.filter = `brightness(${1 - 0.4 * progress})`;
+            });
+        }
+
+        function onScroll() {
+            if (scrollScheduled) return;
+            scrollScheduled = true;
+            window.requestAnimationFrame(() => {
+                updateScrollEffects();
+                scrollScheduled = false;
+            });
+        }
+
+        function moveSlide(direction) {
+            const activeIndex = getActiveIndex();
+            const targetIndex = Math.max(0, Math.min(slideItems.length - 1, activeIndex + direction));
+            window.scrollTo({
+                top: cardTops[targetIndex],
+                behavior: reducedMotion.matches ? "auto" : "smooth",
+            });
+        }
+
+        previousButton.addEventListener("click", () => moveSlide(-1));
+        nextButton.addEventListener("click", () => moveSlide(1));
+        window.addEventListener("scroll", onScroll, { passive: true });
+        window.addEventListener("resize", measureCards);
+        cardsContainer.addEventListener("keydown", (event) => {
+            if (event.key === "ArrowLeft") moveSlide(-1);
+            if (event.key === "ArrowRight") moveSlide(1);
+        });
+        window.addEventListener("load", measureCards);
+        measureCards();
+    </script>
+</body>
+</html>

@@ -1,0 +1,2021 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<title>Johnson Production - Crafting Intuitive Digital Experiences</title>
+<script src="assets/js/vendors/color-modes.js"></script>
+<!-- Favicon icon-->
+<link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon-gradient.svg" />
+<!-- Libs CSS -->
+<link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+<link rel="stylesheet" href="assets/css/vendors/aos.css" />
+<link rel="stylesheet" href="assets/css/vendors/odometer.css" />
+<link rel="stylesheet" href="assets/css/vendors/carouselTicker.css" />
+<link rel="stylesheet" href="assets/css/vendors/magnific-popup.css" />
+<link rel="stylesheet" href="assets/fonts/remixicon/remixicon.css" />
+<link rel="stylesheet" href="assets/fonts/satoshi/satoshi.css" />
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@400..900&family=Urbanist:wght@100..900&display=swap" rel="stylesheet" />
+<!-- Main CSS -->
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/contact.css" />
+<style media="not all">
+    :root {
+        color-scheme: dark;
+        --ruby-leaf: #852e47;
+        --indigo-rain: #0d3e4d;
+        --moss-shadow: #f58f1f;
+        --burnt-nectar: #c2441c;
+        --paper: #f4ede7;
+        --paper-deep: #e8ddd4;
+        --ink-muted: #425b60;
+        --line-light: rgba(13, 62, 77, .16);
+        --line-dark: rgba(244, 237, 231, .18);
+        --tc-theme-primary-1: var(--ruby-leaf);
+        --tc-theme-primary-2: var(--burnt-nectar);
+        --tc-theme-secondary-1: var(--moss-shadow);
+        --tc-neutral-1000: var(--indigo-rain);
+        --tc-neutral-900: #164c5a;
+        --tc-neutral-800: #285a65;
+        --tc-neutral-0: var(--paper);
+        --tc-neutral-00: var(--paper);
+        --tc-bg-1: var(--paper);
+        --tc-bg-2: var(--indigo-rain);
+        --tc-bg-6: var(--paper);
+        --tc-linear-1: var(--ruby-leaf);
+        --tc-linear-2: var(--burnt-nectar);
+        --tc-linear-3: var(--ruby-leaf);
+    }
+
+    html { scroll-behavior: smooth; scroll-padding-top: 92px; }
+    body.jp-homepage {
+        overflow-x: hidden;
+        background: var(--indigo-rain) !important;
+        color: var(--paper);
+        font-family: "Satoshi", "Urbanist", sans-serif;
+        font-size: 16px;
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+    }
+    body.jp-homepage h1,
+    body.jp-homepage h2,
+    body.jp-homepage h3,
+    body.jp-homepage h4,
+    body.jp-homepage h5,
+    body.jp-homepage h6 {
+        color: inherit;
+        font-family: "Satoshi", "Urbanist", sans-serif;
+        font-weight: 700;
+        letter-spacing: -.035em;
+        line-height: 1.15;
+    }
+    body.jp-homepage p { line-height: 1.75; }
+    body.jp-homepage a { transition: color .22s ease, background-color .22s ease, border-color .22s ease, transform .22s ease; }
+    body.jp-homepage a:focus-visible,
+    body.jp-homepage button:focus-visible,
+    body.jp-homepage input:focus-visible,
+    body.jp-homepage textarea:focus-visible {
+        outline: 3px solid var(--burnt-nectar);
+        outline-offset: 3px;
+    }
+    body.jp-homepage .text-primary,
+    body.jp-homepage .text-info { color: var(--ruby-leaf) !important; }
+    body.jp-homepage .text-200,
+    body.jp-homepage .text-300,
+    body.jp-homepage .text-400 { color: var(--ink-muted) !important; }
+    body.jp-homepage .container { --bs-gutter-x: 2rem; }
+
+    body.jp-homepage header { position: relative; z-index: 1000; }
+    body.jp-homepage .navbar {
+        position: absolute;
+        inset: 0 0 auto;
+        min-height: 88px;
+        padding: 0;
+        background: var(--indigo-rain) !important;
+        border-bottom: 1px solid var(--line-dark);
+    }
+    body.jp-homepage .navbar > .container {
+        min-height: 88px;
+        max-width: 1320px;
+        gap: clamp(1rem, 2.5vw, 2.5rem);
+    }
+    body.jp-homepage .navbar-menu { display: none !important; }
+    body.jp-homepage .navbar .navbar-brand {
+        flex: 0 0 auto;
+        margin: 0 !important;
+        padding: .35rem 0;
+        color: var(--paper) !important;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .01em;
+    }
+    body.jp-homepage .navbar-brand img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        filter: brightness(0) invert(1);
+    }
+    body.jp-homepage .navbar-brand span { white-space: nowrap; }
+    body.jp-homepage .nav-links-shell { margin-left: auto; }
+    body.jp-homepage .navbar .navbar-nav { gap: clamp(.2rem, 1.2vw, 1.1rem); }
+    body.jp-homepage .navbar .navbar-nav .nav-link {
+        position: relative;
+        padding: .7rem .75rem;
+        border-radius: 0;
+        color: var(--paper) !important;
+        font-size: .9rem;
+        font-weight: 600;
+        opacity: .82;
+    }
+    body.jp-homepage .navbar .navbar-nav .nav-link::after {
+        position: absolute;
+        right: .75rem;
+        bottom: .35rem;
+        left: .75rem;
+        height: 2px;
+        background: var(--burnt-nectar);
+        content: "";
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform .22s ease;
+    }
+    body.jp-homepage .navbar .navbar-nav .nav-link:hover,
+    body.jp-homepage .navbar .navbar-nav .nav-link.active { color: var(--paper) !important; opacity: 1; }
+    body.jp-homepage .navbar .navbar-nav .nav-link:hover::after,
+    body.jp-homepage .navbar .navbar-nav .nav-link.active::after { transform: scaleX(1); }
+    body.jp-homepage .navbar-social { margin: 0 !important; padding: 0 !important; }
+    body.jp-homepage .navbar-social a { color: var(--paper) !important; font-size: 1.1rem; }
+    body.jp-homepage .navbar-social a:hover { color: var(--burnt-nectar) !important; }
+    body.jp-homepage .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 46px;
+        padding: .65rem 1.15rem;
+        border: 1px solid var(--ruby-leaf);
+        border-radius: 999px;
+        background: var(--ruby-leaf);
+        color: var(--paper) !important;
+        font-size: .88rem;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+    body.jp-homepage .nav-cta:hover { border-color: var(--burnt-nectar); background: var(--burnt-nectar); transform: translateY(-2px); }
+    body.jp-homepage .nav-toggle {
+        display: inline-flex;
+        width: 46px;
+        height: 46px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--line-dark);
+        border-radius: 50%;
+        background: transparent;
+        color: var(--paper);
+        font-size: 1.4rem;
+    }
+    body.jp-homepage .nav-toggle:hover { border-color: var(--burnt-nectar); color: var(--burnt-nectar); }
+    body.jp-homepage .dark-light-switcher,
+    body.jp-homepage .mobile-header-active { display: none !important; }
+    body.jp-homepage .offCanvas__info,
+    body.jp-homepage .offCanvas__overly { display: none !important; }
+
+    body.jp-homepage #home {
+        display: flex;
+        min-height: min(800px, 100svh);
+        align-items: center;
+        padding: 168px 0 112px !important;
+        background: var(--indigo-rain);
+        isolation: isolate;
+    }
+    body.jp-homepage #home .container { z-index: 3; }
+    body.jp-homepage #home .row { width: 100%; }
+    body.jp-homepage #home .col-lg-6 { max-width: 680px; }
+    body.jp-homepage #home > .shape-1 {
+        right: max(4vw, calc((100vw - 1320px) / 2));
+        bottom: 0;
+        left: auto;
+        z-index: 1;
+        margin: 0 !important;
+        opacity: .96;
+        transform: none;
+    }
+    body.jp-homepage #home > .shape-1 > img {
+        display: block;
+        max-width: min(43vw, 590px);
+        max-height: min(72vh, 620px);
+        filter: grayscale(1) contrast(1.06);
+        object-position: bottom;
+    }
+    body.jp-homepage #home .shape-1 .ribbonRotate { max-width: min(18vw, 230px); }
+    body.jp-homepage .jp-hero-video { z-index: -1 !important; }
+    body.jp-homepage .jp-hero-video video {
+        opacity: .18;
+        filter: grayscale(1) saturate(.4);
+        object-position: 70% center !important;
+    }
+    body.jp-homepage #home::before {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        background: var(--indigo-rain);
+        content: "";
+        opacity: .68;
+        pointer-events: none;
+    }
+    body.jp-homepage #home > .container { z-index: 2 !important; }
+    body.jp-homepage #home .col-lg-6 > span:first-child {
+        display: inline-flex;
+        align-items: center;
+        gap: .7rem;
+        margin-bottom: 1.4rem;
+        color: var(--paper) !important;
+        font-size: .82rem;
+        font-weight: 700;
+        letter-spacing: .14em;
+        line-height: 1.4;
+        text-transform: uppercase;
+    }
+    body.jp-homepage #home .col-lg-6 > span:first-child::before {
+        width: 28px;
+        height: 2px;
+        background: var(--burnt-nectar);
+        content: "";
+    }
+    [data-bs-theme="light"] body.jp-homepage #home .col-lg-6 > span:first-child {
+        color: #111 !important;
+    }
+    [data-bs-theme="dark"] body.jp-homepage #home .col-lg-6 > span:first-child {
+        color: #fff !important;
+    }
+    [data-bs-theme="light"] body.jp-homepage #home .hero-heading {
+        max-width: 740px;
+        margin-bottom: 1.4rem !important;
+        color: #111 !important;
+        font-size: clamp(3rem, 6.5vw, 6rem);
+        font-weight: 700;
+        letter-spacing: -.065em;
+        line-height: .99;
+    }
+    [data-bs-theme="dark"] body.jp-homepage #home .hero-heading {
+        max-width: 740px;
+        margin-bottom: 1.4rem !important;
+        color: #fff !important;
+        font-size: clamp(3rem, 6.5vw, 6rem);
+        font-weight: 700;
+        letter-spacing: -.065em;
+        line-height: .99;
+    }
+    [data-bs-theme="light"] body.jp-homepage #home .hero-heading span { display: block; color: #111 !important; }
+    [data-bs-theme="dark"] body.jp-homepage #home .hero-heading span { display: block; color: #fff !important; }
+    body.jp-homepage #home .hero-heading span.text-primary { color: var(--burnt-nectar) !important; }
+    [data-bs-theme="light"] body.jp-homepage #home .col-lg-6 > p {
+        max-width: 540px;
+        font-size: clamp(1rem, 1.5vw, 1.18rem);
+        opacity: .9;
+        color: #111 !important;
+    }
+    [data-bs-theme="dark"] body.jp-homepage #home .col-lg-6 > p {
+        max-width: 540px;
+        font-size: clamp(1rem, 1.5vw, 1.18rem);
+        opacity: .9;
+        color: #fff !important;
+    }
+    [data-bs-theme="light"] body.jp-homepage #home .col-lg-6 > span:first-child,
+    [data-bs-theme="light"] body.jp-homepage #home .col-lg-6 > h1.hero-heading,
+    [data-bs-theme="light"] body.jp-homepage #home .col-lg-6 > h1.hero-heading span,
+    [data-bs-theme="light"] body.jp-homepage #home .col-lg-6 > p.text-300,
+    [data-bs-theme="light"] body.jp-homepage #home .col-lg-6 > p.text-400 {
+        color: #111 !important;
+    }
+    [data-bs-theme="dark"] body.jp-homepage #home .col-lg-6 > span:first-child,
+    [data-bs-theme="dark"] body.jp-homepage #home .col-lg-6 > h1.hero-heading,
+    [data-bs-theme="dark"] body.jp-homepage #home .col-lg-6 > h1.hero-heading span,
+    [data-bs-theme="dark"] body.jp-homepage #home .col-lg-6 > p.text-300,
+    [data-bs-theme="dark"] body.jp-homepage #home .col-lg-6 > p.text-400 {
+        color: #fff !important;
+    }
+    body.jp-homepage .btn {
+        min-height: 48px;
+        padding: .75rem 1.25rem;
+        border-radius: 999px;
+        font-size: .9rem;
+        font-weight: 700;
+        letter-spacing: .01em;
+        transition: color .22s ease, background-color .22s ease, border-color .22s ease, transform .22s ease, box-shadow .22s ease;
+    }
+    body.jp-homepage .btn-gradient {
+        border: 1px solid var(--ruby-leaf) !important;
+        background: var(--ruby-leaf) !important;
+        color: var(--paper) !important;
+        box-shadow: none;
+    }
+    body.jp-homepage .btn-gradient:hover {
+        border-color: var(--burnt-nectar) !important;
+        background: var(--burnt-nectar) !important;
+        color: #fff !important;
+        box-shadow: 0 12px 24px rgba(13, 62, 77, .18);
+        transform: translateY(-2px);
+    }
+    body.jp-homepage .btn-outline-secondary {
+        border: 1px solid var(--paper) !important;
+        background: transparent !important;
+        color: var(--paper) !important;
+    }
+    body.jp-homepage .btn-outline-secondary:hover { border-color: var(--paper) !important; background: var(--paper) !important; color: var(--indigo-rain) !important; }
+    [data-bs-theme="light"] body.jp-homepage #home .col-lg-6 > p.mt-6 { margin-top: 2.7rem !important; color: #111 !important; opacity: .72; font-size: .82rem; letter-spacing: .08em; text-transform: uppercase; }
+    [data-bs-theme="dark"] body.jp-homepage #home .col-lg-6 > p.mt-6 { margin-top: 2.7rem !important; color: #fff !important; opacity: .72; font-size: .82rem; letter-spacing: .08em; text-transform: uppercase; }
+    body.jp-homepage #home .brand-logo {
+        display: grid;
+        width: 48px;
+        height: 48px;
+        place-items: center;
+        padding: .6rem;
+        border: 1px solid var(--line-dark);
+        background: rgba(244, 237, 231, .08) !important;
+        border-radius: 12px !important;
+    }
+    body.jp-homepage #home .brand-logo img { max-width: 100%; max-height: 100%; object-fit: contain; filter: grayscale(1) brightness(0) invert(1); opacity: .76; }
+    body.jp-homepage .jp-hero-video-overlay { display: none; }
+
+    body.jp-homepage .section-static-1 {
+        position: relative;
+        z-index: 2;
+        padding: 34px 0 !important;
+        border-top: 1px solid var(--line-dark);
+        border-bottom: 1px solid var(--line-dark);
+        background: #103747 !important;
+    }
+    body.jp-homepage .section-static-1 .row { row-gap: 1.5rem; }
+    body.jp-homepage .section-static-1 .counter-item .content { justify-content: center; }
+    body.jp-homepage .section-static-1 .count { color: var(--burnt-nectar) !important; font-size: clamp(2rem, 3.2vw, 3.2rem); }
+    body.jp-homepage .section-static-1 .odometer { color: var(--paper) !important; }
+    body.jp-homepage .section-static-1 p,
+    body.jp-homepage .section-static-1 .fw-bold { color: var(--paper) !important; }
+    body.jp-homepage .section-static-1 p { font-size: .86rem !important; line-height: 1.35; }
+
+    body.jp-homepage #services,
+    body.jp-homepage #services .section-work,
+    body.jp-homepage .section-brands-1,
+    body.jp-homepage .section-testimonials-1 {
+        background: var(--paper) !important;
+        color: var(--indigo-rain);
+    }
+    body.jp-homepage #services {
+        padding: 104px 0 0 !important;
+    }
+    body.jp-homepage #services > .container > .row:first-child { margin-bottom: 1rem; }
+    body.jp-homepage #services h3,
+    body.jp-homepage .section-work h1,
+    body.jp-homepage .section-brands-1 h2,
+    body.jp-homepage .section-testimonials-1 h3 { color: var(--indigo-rain) !important; }
+    body.jp-homepage #services h3,
+    body.jp-homepage .section-testimonials-1 h3 { font-size: clamp(2.1rem, 4.2vw, 3.75rem); }
+    body.jp-homepage #services .fs-5,
+    body.jp-homepage .section-work .fs-5,
+    body.jp-homepage .section-brands-1 p,
+    body.jp-homepage .section-testimonials-1 .fs-5 { color: var(--ink-muted) !important; }
+    body.jp-homepage .single-service-card-1 {
+        padding: 1.7rem .6rem !important;
+        border-top: 1px solid var(--line-light) !important;
+        transition: background-color .25s ease, padding .25s ease;
+    }
+    body.jp-homepage .single-service-card-1:last-child { border-bottom: 1px solid var(--line-light); }
+    body.jp-homepage .single-service-card-1:hover { padding-right: 1rem !important; padding-left: 1rem !important; background: rgba(232, 221, 212, .48) !important; }
+    body.jp-homepage .single-service-card-1 .service-card-title { font-size: clamp(1.1rem, 1.5vw, 1.35rem); }
+    body.jp-homepage .single-service-card-1 .service-card-title a,
+    body.jp-homepage .single-service-card-1 .service-card-text,
+    body.jp-homepage .single-service-card-1 .service-card-list { color: var(--indigo-rain) !important; }
+    body.jp-homepage .single-service-card-1 .service-card-title a:hover { color: var(--ruby-leaf) !important; }
+    body.jp-homepage .single-service-card-1 .service-number { color: var(--ruby-leaf) !important; }
+    body.jp-homepage .single-service-card-1 .service-card-text { color: var(--ink-muted) !important; font-size: .92rem; }
+    body.jp-homepage .single-service-card-1 .service-card-list { font-size: .85rem; line-height: 1.55; }
+    body.jp-homepage .single-service-card-1 .service-card-list li::before { color: var(--moss-shadow) !important; }
+    body.jp-homepage .single-service-card-1 .service-card-icon { border-color: var(--ruby-leaf) !important; color: var(--ruby-leaf) !important; }
+    body.jp-homepage .single-service-card-1 .service-card-icon:hover { background: var(--ruby-leaf) !important; color: var(--paper) !important; }
+    body.jp-homepage #services .single-service-card-1:hover .service-card-title a,
+    body.jp-homepage #services .single-service-card-1:hover .service-card-text,
+    body.jp-homepage #services .single-service-card-1:hover .service-card-list,
+    body.jp-homepage #services .single-service-card-1:hover .service-card-list li { color: var(--indigo-rain) !important; }
+    body.jp-homepage #services .single-service-card-1:hover .service-number { color: var(--ruby-leaf) !important; }
+    body.jp-homepage #services .single-service-card-1:hover .service-card-icon { border-color: var(--ruby-leaf) !important; color: var(--ruby-leaf) !important; }
+
+    body.jp-homepage #services .section-work {
+        margin-top: 4.5rem;
+        padding: 88px 0 96px !important;
+        border-top: 1px solid var(--line-light);
+    }
+    body.jp-homepage .section-work .btn-gradient { cursor: default; }
+    body.jp-homepage .section-work h1 { font-size: clamp(2.25rem, 4.8vw, 4.1rem); letter-spacing: -.05em; }
+    body.jp-homepage .section-work h1 .text-300 { color: var(--ruby-leaf) !important; }
+    body.jp-homepage .section-work .card-scroll { margin-top: 3rem !important; }
+    body.jp-homepage .section-work .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+    body.jp-homepage .section-work .card-custom { position: relative !important; top: auto !important; }
+    body.jp-homepage .section-work .card__inner {
+        height: 100%;
+        min-height: 420px;
+        flex-direction: column;
+        border: 1px solid var(--line-light);
+        border-radius: 18px !important;
+        background: #fbf7f3 !important;
+        box-shadow: 0 18px 44px rgba(13, 62, 77, .08) !important;
+        transform: none !important;
+    }
+    body.jp-homepage .section-work .card__image-container { flex: 0 0 auto; height: clamp(190px, 24vw, 280px); overflow: hidden; border-radius: 0 !important; }
+    body.jp-homepage .section-work .card__image { aspect-ratio: auto !important; transition: transform .5s ease; }
+    body.jp-homepage .section-work .card-custom:hover .card__image { transform: scale(1.035); }
+    body.jp-homepage .section-work .card__content { padding: 1.5rem 1.7rem 1.8rem !important; }
+    body.jp-homepage .section-work .card__content .text-primary { color: var(--ruby-leaf) !important; font-size: .72rem; font-weight: 700; letter-spacing: .12em; }
+    body.jp-homepage .section-work .card__content h2 { color: var(--indigo-rain) !important; font-size: 1.35rem; }
+    body.jp-homepage .section-work .card__content p { color: var(--ink-muted) !important; }
+    body.jp-homepage .section-work .card__content .text-dark { color: var(--moss-shadow) !important; font-weight: 700; letter-spacing: .08em; }
+    body.jp-homepage .section-work .card__content .content { border-color: var(--line-light) !important; }
+    body.jp-homepage #portfolio,
+    body.jp-homepage .fillter-project,
+    body.jp-homepage .section-skills-1 {
+        background-color: var(--indigo-rain) !important;
+        color: var(--paper);
+    }
+    body.jp-homepage #portfolio { padding: 82px 0 20px !important; }
+    body.jp-homepage #portfolio h3,
+    body.jp-homepage .section-skills-1 h3 { color: var(--paper) !important; font-size: clamp(2.25rem, 4.5vw, 3.75rem); }
+    body.jp-homepage #portfolio .fs-5,
+    body.jp-homepage .section-skills-1 .fs-5 { color: var(--paper) !important; opacity: .82; }
+    body.jp-homepage .fillter-project { padding: 1.5rem 0 5.4rem; }
+    body.jp-homepage .fillter-project .button-group { display: flex; flex-wrap: wrap; gap: .65rem; }
+    body.jp-homepage .fillter-project .button-group > * { margin: 0 !important; }
+    body.jp-homepage .fillter-project .btn-filter {
+        display: inline-flex;
+        align-items: center;
+        min-height: 42px;
+        padding: .55rem .9rem;
+        border: 1px solid var(--line-dark);
+        border-radius: 999px;
+        background: transparent;
+        color: var(--paper) !important;
+        font-size: .79rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: color .2s ease, background-color .2s ease, border-color .2s ease;
+    }
+    body.jp-homepage .fillter-project .btn-filter:hover,
+    body.jp-homepage .fillter-project .btn-filter.active { border-color: var(--ruby-leaf); background: var(--ruby-leaf); color: var(--paper) !important; }
+    body.jp-homepage .section-skills-1 { padding: 70px 0 88px !important; border-top: 1px solid var(--line-dark); }
+    body.jp-homepage .section-skills-1 .skills { min-width: 130px; padding: 1.25rem 1rem; border: 1px solid var(--line-dark); border-radius: 14px; background: rgba(244, 237, 231, .045); }
+    body.jp-homepage .section-skills-1 .skills-icon img { width: 52px; height: 52px; object-fit: contain; filter: grayscale(1) brightness(0) invert(1); opacity: .9; }
+    body.jp-homepage .section-skills-1 .skills-ratio h3 { color: var(--burnt-nectar) !important; font-size: 1.45rem; }
+    body.jp-homepage .section-skills-1 .skills-ratio p { color: var(--paper) !important; font-size: .68rem; letter-spacing: .06em; }
+    body.jp-homepage .section-skills-1 > .container > .row > .text-center:last-child p { color: var(--paper) !important; opacity: .85; }
+
+    body.jp-homepage .section-brands-1 { padding: 86px 0 !important; border-top: 1px solid var(--line-light); }
+    body.jp-homepage .section-brands-1 h2 { font-size: clamp(2rem, 3.8vw, 3.2rem); }
+    body.jp-homepage .section-brands-1 .carouselTicker { margin-top: 2.5rem !important; }
+    body.jp-homepage .carouselTicker__item img { max-width: 140px; max-height: 60px; filter: grayscale(1); opacity: .62; }
+    body.jp-homepage .section-testimonials-1 { padding: 88px 0 !important; border-top: 1px solid var(--line-light); }
+    body.jp-homepage .section-testimonials-1 .row.mt-8 { margin-top: 2.5rem !important; }
+    body.jp-homepage .card-testimonial-1 {
+        height: 100%;
+        min-height: 330px;
+        padding: clamp(1.5rem, 3vw, 2.5rem) !important;
+        border: 1px solid var(--line-light) !important;
+        border-radius: 18px !important;
+        background: #fbf7f3 !important;
+        box-shadow: 0 16px 40px rgba(13, 62, 77, .07);
+    }
+    body.jp-homepage .card-testimonial-1 h6 { color: var(--indigo-rain) !important; }
+    body.jp-homepage .card-testimonial-1 .fs-6 { color: var(--ink-muted) !important; }
+    body.jp-homepage .card-testimonial-1 .ri-star-fill { color: var(--moss-shadow) !important; }
+    body.jp-homepage .card-testimonial-1 svg path { fill: var(--paper-deep) !important; }
+    body.jp-homepage .card-testimonial-1 .logo img { max-width: 130px; max-height: 48px; object-fit: contain; filter: grayscale(1); }
+    body.jp-homepage .card-testimonial-1 .avatar { border: 2px solid var(--paper-deep); border-radius: 50%; }
+    body.jp-homepage .swiper-pagination-bullet { background: var(--indigo-rain); opacity: .35; }
+    body.jp-homepage .swiper-pagination-bullet-active { background: var(--ruby-leaf); opacity: 1; }
+
+    body.jp-homepage #contact {
+        padding: 96px 0 108px !important;
+        background: #103747 !important;
+        color: var(--paper);
+    }
+    body.jp-homepage #contact h3 { color: var(--paper) !important; font-size: clamp(2.2rem, 4.4vw, 3.8rem); }
+    body.jp-homepage #contact > .container > span,
+    body.jp-homepage #contact .text-400,
+    body.jp-homepage #contact .text-200 { color: var(--paper) !important; opacity: .83; }
+    body.jp-homepage #contact .icon-shape { flex: 0 0 58px; width: 58px; height: 58px; border: 1px solid var(--line-dark) !important; border-radius: 16px !important; background: rgba(244, 237, 231, .08) !important; }
+    body.jp-homepage #contact .icon-shape i { color: var(--burnt-nectar) !important; }
+    body.jp-homepage #contact .d-flex > .ps-3 { min-width: 0; }
+    body.jp-homepage #contact .d-flex h6 { overflow-wrap: anywhere; color: var(--paper) !important; font-size: .95rem; }
+    body.jp-homepage #contact .position-relative.z-2 {
+        padding: clamp(1.4rem, 3vw, 2.5rem);
+        border: 1px solid var(--line-dark);
+        border-radius: 20px;
+        background: var(--indigo-rain);
+    }
+    body.jp-homepage #contact .position-relative.z-2 > h3 { font-size: 1.65rem; }
+    body.jp-homepage #contact label { color: var(--paper) !important; font-size: .84rem; font-weight: 600; }
+    body.jp-homepage #contact label .text-primary { color: var(--burnt-nectar) !important; }
+    body.jp-homepage #contact .form-control {
+        min-height: 52px;
+        padding: .8rem 1rem;
+        border: 1px solid rgba(244, 237, 231, .26) !important;
+        border-radius: 10px !important;
+        background: #164c5a !important;
+        color: var(--paper) !important;
+        font: inherit;
+    }
+    body.jp-homepage #contact textarea.form-control { min-height: 150px; resize: vertical; }
+    body.jp-homepage #contact .form-control::placeholder { color: #d3d8d5 !important; opacity: .78; }
+    body.jp-homepage #contact .form-control:focus { border-color: var(--burnt-nectar) !important; box-shadow: 0 0 0 3px rgba(194, 68, 28, .2) !important; }
+    body.jp-homepage #contact .rectangle-bg { display: none; }
+    body.jp-homepage #contact .scroll-move-right { display: none; }
+    body.jp-homepage .section-footer {
+        padding: 48px 0 !important;
+        border-top: 1px solid var(--line-dark);
+        background: var(--indigo-rain) !important;
+    }
+    body.jp-homepage .section-footer .main-logo { justify-content: center; color: var(--paper) !important; }
+    body.jp-homepage .section-footer .main-logo img { width: 38px; height: 38px; object-fit: contain; filter: brightness(0) invert(1); }
+    body.jp-homepage .section-footer .navigation a { color: var(--paper) !important; font-size: .9rem !important; }
+    body.jp-homepage .section-footer .navigation a:hover,
+    body.jp-homepage .section-footer .text-primary { color: var(--burnt-nectar) !important; }
+    body.jp-homepage .section-footer .text-white-keep { color: var(--paper) !important; }
+    body.jp-homepage .section-footer [data-background] { display: none; }
+
+    body.jp-homepage .btn-scroll-top { border-color: var(--ruby-leaf) !important; background: var(--ruby-leaf) !important; }
+    body.jp-homepage .btn-scroll-top path { stroke: var(--paper) !important; }
+    body.jp-homepage #preloader { background: var(--indigo-rain) !important; }
+    body.jp-homepage ::selection { background: var(--ruby-leaf); color: var(--paper); }
+
+    @media (min-width: 1200px) {
+        body.jp-homepage .navbar > .container { padding-right: 1.25rem !important; padding-left: 1.25rem !important; }
+    }
+    @media (max-width: 1199.98px) {
+        body.jp-homepage .navbar > .container { padding-right: 1.25rem !important; padding-left: 1.25rem !important; }
+        body.jp-homepage .nav-links-shell {
+            position: absolute;
+            top: calc(100% - 1px);
+            right: 1rem;
+            left: 1rem;
+            display: none;
+            padding: .8rem 1.1rem;
+            border: 1px solid var(--line-dark);
+            border-radius: 0 0 16px 16px;
+            background: var(--indigo-rain);
+            box-shadow: 0 18px 30px rgba(0, 0, 0, .18);
+        }
+        body.jp-homepage .nav-links-shell.is-open { display: block; }
+        body.jp-homepage .navbar .navbar-nav { display: flex; flex-direction: column; gap: 0; }
+        body.jp-homepage .navbar .navbar-nav .nav-link { padding: .8rem .35rem; border-bottom: 1px solid var(--line-dark); }
+        body.jp-homepage .navbar .navbar-nav li:last-child .nav-link { border-bottom: 0; }
+        body.jp-homepage .navbar .navbar-nav .nav-link::after { display: none; }
+        body.jp-homepage .navbar-social { display: none !important; }
+        body.jp-homepage #home { min-height: 700px; }
+        body.jp-homepage #home > .shape-1 { right: 2vw; }
+        body.jp-homepage #home > .shape-1 > img { max-width: 45vw; max-height: 62vh; }
+        body.jp-homepage #home .col-lg-6 { max-width: 62%; }
+    }
+    @media (max-width: 767.98px) {
+        html { scroll-padding-top: 76px; }
+        body.jp-homepage { font-size: 15px; }
+        body.jp-homepage .container { --bs-gutter-x: 1.5rem; }
+        body.jp-homepage .navbar,
+        body.jp-homepage .navbar > .container { min-height: 72px; }
+        body.jp-homepage .navbar > .container { padding-right: 1rem !important; padding-left: 1rem !important; gap: .5rem; }
+        body.jp-homepage .navbar-brand img { width: 34px; height: 34px; }
+        body.jp-homepage .navbar-brand span { font-size: .88rem !important; }
+        body.jp-homepage .nav-cta { display: none !important; }
+        body.jp-homepage .nav-toggle { width: 42px; height: 42px; }
+        body.jp-homepage .nav-links-shell { right: .75rem; left: .75rem; }
+        body.jp-homepage #home {
+            min-height: 680px;
+            align-items: flex-start;
+            padding: 142px 0 56px !important;
+        }
+        body.jp-homepage #home .col-lg-6 { max-width: 100%; }
+        body.jp-homepage #home .hero-heading { max-width: 540px; font-size: clamp(2.75rem, 12vw, 4.45rem); }
+        body.jp-homepage #home .col-lg-6 > p:not(.mt-6) { max-width: 490px; }
+        body.jp-homepage #home > .shape-1 { right: -4vw; opacity: .3; }
+        body.jp-homepage #home > .shape-1 > img { max-width: 68vw; max-height: 45vh; }
+        body.jp-homepage #home .shape-1 .ribbonRotate { display: none; }
+        body.jp-homepage #home .col-lg-6 > p.mt-6 { margin-top: 2rem !important; }
+        body.jp-homepage #home .brand-logo { width: 42px; height: 42px; }
+        body.jp-homepage .section-static-1 { padding: 28px 0 !important; }
+        body.jp-homepage .section-static-1 .counter-item .content { justify-content: flex-start; }
+        body.jp-homepage .section-static-1 .count { font-size: 2rem; }
+        body.jp-homepage .section-static-1 p { font-size: .78rem !important; }
+        body.jp-homepage #services { padding-top: 68px !important; }
+        body.jp-homepage .single-service-card-1 { padding: 1.3rem .2rem !important; }
+        body.jp-homepage .single-service-card-1:hover { padding-right: .4rem !important; padding-left: .4rem !important; }
+        body.jp-homepage .single-service-card-1 .service-card-list { margin-top: .75rem; }
+        body.jp-homepage #services .section-work { margin-top: 3rem; padding: 60px 0 !important; }
+        body.jp-homepage .section-work .cards { grid-template-columns: 1fr; gap: 1rem; }
+        body.jp-homepage .section-work .card__inner { min-height: 0; }
+        body.jp-homepage .section-work .card__image-container { height: 220px; }
+        body.jp-homepage .section-work .card__content { padding: 1.25rem !important; }
+        body.jp-homepage #portfolio { padding-top: 64px !important; }
+        body.jp-homepage .fillter-project { padding-bottom: 4rem; }
+        body.jp-homepage .fillter-project .button-group { gap: .5rem; }
+        body.jp-homepage .fillter-project .btn-filter { min-height: 40px; padding: .48rem .72rem; font-size: .72rem; }
+        body.jp-homepage .section-skills-1 { padding: 56px 0 !important; }
+        body.jp-homepage .section-skills-1 .d-flex.flex-wrap { padding: 0 !important; gap: .6rem !important; }
+        body.jp-homepage .section-skills-1 .skills { flex: 1 1 calc(33.333% - .6rem); min-width: 95px; padding: 1rem .55rem; }
+        body.jp-homepage .section-skills-1 .skills-icon img { width: 40px; height: 40px; }
+        body.jp-homepage .section-brands-1,
+        body.jp-homepage .section-testimonials-1 { padding: 60px 0 !important; }
+        body.jp-homepage .card-testimonial-1 { min-height: 300px; }
+        body.jp-homepage #contact { padding: 64px 0 !important; }
+        body.jp-homepage #contact .position-relative.z-2 { padding: 1.2rem; }
+        body.jp-homepage .section-footer { padding: 34px 0 !important; }
+    }
+    @media (max-width: 380px) {
+        body.jp-homepage .navbar-brand span { max-width: 122px; overflow: hidden; text-overflow: ellipsis; }
+        body.jp-homepage #home { min-height: 720px; }
+        body.jp-homepage .section-skills-1 .skills { flex-basis: calc(50% - .6rem); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+        body.jp-homepage *,
+        body.jp-homepage *::before,
+        body.jp-homepage *::after {
+            scroll-behavior: auto !important;
+            animation-duration: .01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: .01ms !important;
+        }
+    }
+</style>
+<style>
+    :root {
+        color-scheme: light;
+        --bs-body-bg: #f4f3f1;
+        --bs-body-color: #363636;
+        --bs-primary: #457534;
+        --bs-primary-rgb: 69, 117, 52;
+        --bs-secondary: #5f5d59;
+        --bs-success: #457534;
+        --bs-success-rgb: 69, 117, 52;
+        --bs-info: #457534;
+        --bs-info-rgb: 69, 117, 52;
+        --bs-warning: #f58f1f;
+        --bs-warning-rgb: 245, 143, 31;
+        --bs-dark: #363636;
+        --bs-light: #f4f3f1;
+        --tc-theme-primary-1: #457534;
+        --tc-theme-primary-2: #f58f1f;
+        --tc-theme-primary-3: #9a9894;
+        --tc-theme-secondary-1: #e4e2df;
+        --tc-theme-secondary-3: #9a9894;
+        --tc-theme-dark-primary-1: #457534;
+        --tc-theme-dark-primary-2: #f58f1f;
+        --tc-theme-dark-primary-3: #9a9894;
+        --tc-theme-dark-secondary-1: #e4e2df;
+        --tc-theme-dark-secondary-3: #9a9894;
+        --tc-neutral-0: #363636;
+        --tc-neutral-100: #4d4c49;
+        --tc-neutral-200: #565451;
+        --tc-neutral-300: #5f5d59;
+        --tc-neutral-400: #66645f;
+        --tc-neutral-500: #777570;
+        --tc-neutral-600: #85837f;
+        --tc-neutral-700: #918f8a;
+        --tc-neutral-800: #9a9894;
+        --tc-neutral-900: #e7e5e2;
+        --tc-neutral-1000: #f4f3f1;
+        --tc-neutral-dark-0: #f4f3f1;
+        --tc-neutral-dark-100: #e7e5e2;
+        --tc-neutral-dark-200: #d4d2ce;
+        --tc-neutral-dark-300: #c2c0bc;
+        --tc-neutral-dark-400: #b3b1ad;
+        --tc-neutral-dark-500: #9a9894;
+        --tc-neutral-dark-600: #62615e;
+        --tc-neutral-dark-700: #4a4a48;
+        --tc-neutral-dark-800: #414141;
+        --tc-neutral-dark-900: #3d3d3d;
+        --tc-neutral-dark-1000: #363636;
+        --tc-system-success: #457534;
+        --tc-system-info: #457534;
+        --tc-system-warning: #f58f1f;
+        --tc-system-danger: #9a9894;
+        --tc-system-dark-success: #9bc18a;
+        --tc-system-dark-info: #9bc18a;
+        --tc-system-dark-warning: #f58f1f;
+        --tc-system-dark-danger: #9a9894;
+        --tc-bg-1: #f4f3f1;
+        --tc-bg-2: #363636;
+        --tc-bg-3: #f4f3f1;
+        --tc-bg-4: #f4f3f1;
+        --tc-bg-5: #e7e5e2;
+        --tc-bg-6: #eceae7;
+        --tc-bg-dark-1: #3d3d3d;
+        --tc-bg-dark-2: #363636;
+        --tc-bg-dark-3: #414141;
+        --tc-bg-dark-4: #363636;
+        --tc-bg-dark-5: #363636;
+        --tc-bg-dark-6: #414141;
+        --tc-border-1: #9a9894;
+        --tc-border-dark-1: #62615e;
+        --tc-linear-1: #457534;
+        --tc-linear-2: #363636;
+        --tc-linear-3: #9a9894;
+        --tc-linear-4: #457534;
+        --tc-linear-dark-1: #457534;
+        --tc-linear-dark-2: #363636;
+        --tc-linear-dark-3: #62615e;
+        --tc-linear-dark-4: #457534;
+        --tc-shadow-1: 0 12px 34px rgba(54, 54, 54, .12);
+        --tc-shadow-2: 0 0 24px rgba(54, 54, 54, .1);
+        --tc-shadow-dark-1: 0 12px 34px rgba(0, 0, 0, .28);
+        --tc-shadow-dark-2: 0 0 24px rgba(0, 0, 0, .2);
+    }
+    [data-bs-theme="dark"] {
+        color-scheme: dark;
+        --bs-body-bg: #363636;
+        --bs-body-color: #f4f3f1;
+        --bs-primary: #9bc18a;
+        --bs-primary-rgb: 155, 193, 138;
+        --bs-secondary: #9a9894;
+        --bs-success: #9bc18a;
+        --bs-success-rgb: 155, 193, 138;
+        --bs-info: #9bc18a;
+        --bs-info-rgb: 155, 193, 138;
+        --bs-warning: #f58f1f;
+        --bs-warning-rgb: 245, 143, 31;
+        --bs-dark: #363636;
+        --bs-light: #f4f3f1;
+        --tc-theme-primary-1: #9bc18a;
+        --tc-theme-primary-2: #f58f1f;
+        --tc-theme-primary-3: #9a9894;
+        --tc-theme-secondary-1: #4a4a48;
+        --tc-theme-secondary-3: #777570;
+        --tc-theme-dark-primary-1: #9bc18a;
+        --tc-theme-dark-primary-2: #f58f1f;
+        --tc-theme-dark-primary-3: #9a9894;
+        --tc-theme-dark-secondary-1: #4a4a48;
+        --tc-theme-dark-secondary-3: #777570;
+        --tc-neutral-0: #f4f3f1;
+        --tc-neutral-100: #e7e5e2;
+        --tc-neutral-200: #d4d2ce;
+        --tc-neutral-300: #c2c0bc;
+        --tc-neutral-400: #b3b1ad;
+        --tc-neutral-500: #9a9894;
+        --tc-neutral-600: #777570;
+        --tc-neutral-700: #62615e;
+        --tc-neutral-800: #4a4a48;
+        --tc-neutral-900: #3d3d3d;
+        --tc-neutral-1000: #363636;
+        --tc-system-success: #9bc18a;
+        --tc-system-info: #9bc18a;
+        --tc-system-warning: #f58f1f;
+        --tc-system-danger: #9a9894;
+        --tc-system-dark-success: #9bc18a;
+        --tc-system-dark-info: #9bc18a;
+        --tc-system-dark-warning: #f58f1f;
+        --tc-system-dark-danger: #9a9894;
+        --tc-bg-1: #3d3d3d;
+        --tc-bg-2: #363636;
+        --tc-bg-3: #414141;
+        --tc-bg-4: #363636;
+        --tc-bg-5: #363636;
+        --tc-bg-6: #414141;
+        --tc-bg-dark-1: #3d3d3d;
+        --tc-bg-dark-2: #363636;
+        --tc-bg-dark-3: #414141;
+        --tc-bg-dark-4: #363636;
+        --tc-bg-dark-5: #363636;
+        --tc-bg-dark-6: #414141;
+        --tc-border-1: #62615e;
+        --tc-border-dark-1: #62615e;
+        --tc-linear-1: #457534;
+        --tc-linear-2: #363636;
+        --tc-linear-3: #62615e;
+        --tc-linear-4: #457534;
+        --tc-linear-dark-1: #457534;
+        --tc-linear-dark-2: #363636;
+        --tc-linear-dark-3: #62615e;
+        --tc-linear-dark-4: #457534;
+        --tc-shadow-1: 0 12px 34px rgba(0, 0, 0, .28);
+        --tc-shadow-2: 0 0 24px rgba(0, 0, 0, .2);
+        --tc-shadow-dark-1: 0 12px 34px rgba(0, 0, 0, .28);
+        --tc-shadow-dark-2: 0 0 24px rgba(0, 0, 0, .2);
+    }
+    body.jp-homepage {
+        background-color: var(--bs-body-bg) !important;
+        color: var(--bs-body-color) !important;
+    }
+    body.jp-homepage #home {
+        background-color: #f3f3f1 !important;
+    }
+    body.jp-homepage #home .hero-heading,
+    body.jp-homepage #home .col-lg-6 > span:first-child,
+    body.jp-homepage #home .col-lg-6 > p,
+    body.jp-homepage #home .col-lg-6 > p.mt-6 {
+        color: #111 !important;
+        -webkit-text-fill-color: #111;
+    }
+    body.jp-homepage #home .hero-heading .text-primary {
+        color: #111 !important;
+        -webkit-text-fill-color: #111;
+    }
+    body.jp-homepage .text-primary,
+    body.jp-homepage .text-primary-1,
+    body.jp-homepage .text-primary-2,
+    body.jp-homepage .text-info,
+    body.jp-homepage .text-success {
+        color: #457534 !important;
+        -webkit-text-fill-color: #457534;
+    }
+    [data-bs-theme="dark"] body.jp-homepage .text-primary,
+    [data-bs-theme="dark"] body.jp-homepage .text-primary-1,
+    [data-bs-theme="dark"] body.jp-homepage .text-primary-2,
+    [data-bs-theme="dark"] body.jp-homepage .text-info,
+    [data-bs-theme="dark"] body.jp-homepage .text-success {
+        color: #9bc18a !important;
+        -webkit-text-fill-color: #9bc18a;
+    }
+    body.jp-homepage .text-info,
+    body.jp-homepage i.text-info,
+    body.jp-homepage svg .text-info { color: var(--tc-system-info) !important; }
+    body.jp-homepage .navbar .dark-light-switcher .ri-sun-fill { color: #f58f1f !important; }
+    [data-bs-theme="dark"] body.jp-homepage .navbar .dark-light-switcher .ri-sun-fill { color: #f58f1f !important; }
+    [data-bs-theme="dark"] body.jp-homepage .bg-white .text-primary,
+    [data-bs-theme="dark"] body.jp-homepage .bg-white .text-info,
+    [data-bs-theme="dark"] body.jp-homepage .bg-white i.text-primary {
+        color: #457534 !important;
+        -webkit-text-fill-color: #457534;
+    }
+    body.jp-homepage .btn-gradient,
+    body.jp-homepage .btn-primary {
+        border-color: #457534 !important;
+        background-color: #457534 !important;
+        background-image: none !important;
+        color: #fff !important;
+        -webkit-text-fill-color: #fff;
+    }
+    body.jp-homepage .btn-gradient:hover,
+    body.jp-homepage .btn-primary:hover {
+        border-color: #f58f1f !important;
+        background-color: #f58f1f !important;
+        color: #363636 !important;
+        -webkit-text-fill-color: #363636;
+    }
+
+    [data-bs-theme="light"] body.jp-homepage,
+    [data-bs-theme="light"] body.jp-homepage p,
+    [data-bs-theme="light"] body.jp-homepage li,
+    [data-bs-theme="light"] body.jp-homepage h1,
+    [data-bs-theme="light"] body.jp-homepage h2,
+    [data-bs-theme="light"] body.jp-homepage h3,
+    [data-bs-theme="light"] body.jp-homepage h4,
+    [data-bs-theme="light"] body.jp-homepage h5,
+    [data-bs-theme="light"] body.jp-homepage h6,
+    [data-bs-theme="light"] body.jp-homepage a:not(.btn),
+    [data-bs-theme="light"] body.jp-homepage .navbar .navbar-brand,
+    [data-bs-theme="light"] body.jp-homepage .navbar .navbar-nav .nav-link,
+    [data-bs-theme="light"] body.jp-homepage .navbar-social a,
+    [data-bs-theme="light"] body.jp-homepage #home .hero-heading,
+    [data-bs-theme="light"] body.jp-homepage #home .hero-heading span,
+    [data-bs-theme="light"] body.jp-homepage #home .col-lg-6 > p,
+    [data-bs-theme="light"] body.jp-homepage #home .col-lg-6 > p.mt-6,
+    [data-bs-theme="light"] body.jp-homepage .section-static-1 p,
+    [data-bs-theme="light"] body.jp-homepage .section-static-1 .fw-bold,
+    [data-bs-theme="light"] body.jp-homepage #services h3,
+    [data-bs-theme="light"] body.jp-homepage #services .fs-5,
+    [data-bs-theme="light"] body.jp-homepage #services .single-service-card-1 .service-card-title a,
+    [data-bs-theme="light"] body.jp-homepage #services .single-service-card-1 .service-card-text,
+    [data-bs-theme="light"] body.jp-homepage #services .single-service-card-1 .service-card-list,
+    [data-bs-theme="light"] body.jp-homepage .section-work h1,
+    [data-bs-theme="light"] body.jp-homepage .section-work .card__content h2,
+    [data-bs-theme="light"] body.jp-homepage .section-work .card__content p,
+    [data-bs-theme="light"] body.jp-homepage .section-skills-1 h3,
+    [data-bs-theme="light"] body.jp-homepage .section-skills-1 .fs-5,
+    [data-bs-theme="light"] body.jp-homepage .section-skills-1 .skills-ratio p,
+    [data-bs-theme="light"] body.jp-homepage #contact h3,
+    [data-bs-theme="light"] body.jp-homepage #contact .text-200,
+    [data-bs-theme="light"] body.jp-homepage #contact .d-flex h6,
+    [data-bs-theme="light"] body.jp-homepage #contact label,
+    [data-bs-theme="light"] body.jp-homepage .section-footer .navigation a,
+    [data-bs-theme="light"] body.jp-homepage .section-footer .text-white-keep {
+        color: #111 !important;
+    }
+
+    [data-bs-theme="dark"] body.jp-homepage,
+    [data-bs-theme="dark"] body.jp-homepage p,
+    [data-bs-theme="dark"] body.jp-homepage li,
+    [data-bs-theme="dark"] body.jp-homepage h1,
+    [data-bs-theme="dark"] body.jp-homepage h2,
+    [data-bs-theme="dark"] body.jp-homepage h3,
+    [data-bs-theme="dark"] body.jp-homepage h4,
+    [data-bs-theme="dark"] body.jp-homepage h5,
+    [data-bs-theme="dark"] body.jp-homepage h6,
+    [data-bs-theme="dark"] body.jp-homepage a:not(.btn),
+    [data-bs-theme="dark"] body.jp-homepage .navbar .navbar-brand,
+    [data-bs-theme="dark"] body.jp-homepage .navbar .navbar-nav .nav-link,
+    [data-bs-theme="dark"] body.jp-homepage .navbar-social a,
+    [data-bs-theme="dark"] body.jp-homepage #home .hero-heading,
+    [data-bs-theme="dark"] body.jp-homepage #home .hero-heading span,
+    [data-bs-theme="dark"] body.jp-homepage #home .col-lg-6 > p,
+    [data-bs-theme="dark"] body.jp-homepage #home .col-lg-6 > p.mt-6,
+    [data-bs-theme="dark"] body.jp-homepage .section-static-1 p,
+    [data-bs-theme="dark"] body.jp-homepage .section-static-1 .fw-bold,
+    [data-bs-theme="dark"] body.jp-homepage #services h3,
+    [data-bs-theme="dark"] body.jp-homepage #services .fs-5,
+    [data-bs-theme="dark"] body.jp-homepage #services .single-service-card-1 .service-card-title a,
+    [data-bs-theme="dark"] body.jp-homepage #services .single-service-card-1 .service-card-text,
+    [data-bs-theme="dark"] body.jp-homepage #services .single-service-card-1 .service-card-list,
+    [data-bs-theme="dark"] body.jp-homepage .section-work h1,
+    [data-bs-theme="dark"] body.jp-homepage .section-work .card__content h2,
+    [data-bs-theme="dark"] body.jp-homepage .section-work .card__content p,
+    [data-bs-theme="dark"] body.jp-homepage .section-skills-1 h3,
+    [data-bs-theme="dark"] body.jp-homepage .section-skills-1 .fs-5,
+    [data-bs-theme="dark"] body.jp-homepage .section-skills-1 .skills-ratio p,
+    [data-bs-theme="dark"] body.jp-homepage #contact h3,
+    [data-bs-theme="dark"] body.jp-homepage #contact .text-200,
+    [data-bs-theme="dark"] body.jp-homepage #contact .d-flex h6,
+    [data-bs-theme="dark"] body.jp-homepage #contact label,
+    [data-bs-theme="dark"] body.jp-homepage .section-footer .navigation a,
+    [data-bs-theme="dark"] body.jp-homepage .section-footer .text-white-keep {
+        color: #fff !important;
+    }
+
+    body.jp-homepage .navbar .navbar-brand,
+    body.jp-homepage .navbar .navbar-nav .nav-link,
+    body.jp-homepage .navbar .navbar-nav .nav-link:hover,
+    body.jp-homepage .navbar .navbar-nav .nav-link.active,
+    body.jp-homepage .navbar-social a,
+    body.jp-homepage .navbar-social i,
+    body.jp-homepage .navbar-social svg,
+    body.jp-homepage .navbar .dark-light-switcher i,
+    body.jp-homepage .offCanvas__info h3,
+    body.jp-homepage .offCanvas__info p,
+    body.jp-homepage .offCanvas__info span,
+    body.jp-homepage .offCanvas__info a,
+    body.jp-homepage .offCanvas__info i,
+    body.jp-homepage .offCanvas__info svg,
+    body.jp-homepage .mobile-header-wrapper-inner .mobile-menu-wrap .nav-link,
+    body.jp-homepage .mobile-header-wrapper-inner .mobile-menu-wrap .nav-item a,
+    body.jp-homepage .mobile-header-wrapper-inner .mobile-menu-wrap .nav-item i {
+        color: #fff !important;
+    }
+</style>
+<style>
+    [data-bs-theme="light"] body.jp-homepage .offCanvas__info,
+    [data-bs-theme="light"] body.jp-homepage .offCanvas__info * {
+        color: #000 !important;
+    }
+
+    body.jp-homepage #contact .contact-logo {
+        display: block;
+        position: relative;
+        left: 50%;
+        width: 100vw;
+        max-width: none;
+        height: auto;
+        transform: translateX(-50vw);
+        margin-top: 1.25rem;
+        opacity: .5;
+    }
+</style>
+
+    </head>
+    <body class="jp-homepage">
+        <!-- prettier-ignore -->
+        <!--Preloader-->
+<div id="preloader">
+    <div class="loader-cover">
+        <div class="loader-container">
+            <div class="loader-icon"></div>
+        </div>
+    </div>
+</div>
+<!--Preloader-end -->
+
+        <!-- Navbar -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light w-100 flex-nowrap z-999 p-0">
+        <a href="#" class="navbar-menu p-4 text-center square-100 menu-tigger icon_80 icon-shape d-none d-md-flex" data-bs-target=".offCanvas__info" aria-controls="offCanvas__info" aria-label="Open contact information">
+            <i class="ri-menu-2-line"></i>
+        </a>
+        <div class="container d-flex align-items-center flex-nowrap py-2 px-0">
+            <a class="navbar-brand d-flex main-logo align-items-center ms-lg-0 ms-md-5 ms-3" href="#home">
+                <img src="assets/imgs/template/favicon.svg" alt="zelio" />
+                <span class="fs-4 ms-2"></span>
+            </a>
+            <div class="d-none d-lg-flex"><div class="main-menu">
+    <ul class="navbar-nav me-auto mb-0 flex-nowrap">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+        </li>
+    </ul>
+</div>
+</div>
+            <div class="navbar-social d-flex align-items-center flex-shrink-0 pe-5 pe-lg-0 me-5 me-lg-0">
+                <div class="d-md-flex d-none gap-3">
+                    <a href="https://wa.me/918056108609?text=Hi%20Johnson%20Production%2C%20I%20want%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="WhatsApp">
+                        <i class="ri-whatsapp-fill fs-18"></i>
+                    </a>
+                    <a href="https://linkedin.com" aria-label="LinkedIn">
+                        <i class="ri-linkedin-fill fs-18"></i>
+                    </a>
+                </div>
+            </div>
+        <button class="dark-light-switcher flex-shrink-0 pe-10 pe-lg-0 pe-0 ps-md-5 ps-0 ps-lg-4 pe-lg-4 d-flex justify-content-center align-items-center icon_80 border-0 bg-transparent" type="button" aria-label="Toggle light and dark mode">
+            <i class="ri-sun-fill text-warning"></i>
+            <i class="ri-contrast-2-line text-white"></i>
+        </button>
+        </div>
+    </nav>
+    <!-- offCanvas-menu -->
+<div class="offCanvas__info">
+    <div class="offCanvas__close-icon menu-close">
+        <button><i class="ri-close-line"></i></button>
+    </div>
+    <div class="offCanvas__logo mb-5"><h3 class="mb-0">Get in touch</h3></div>
+    <div class="offCanvas__side-info mb-30">
+        <div class="contact-list mb-30">
+            <p class="fs-6 fw-medium text-200 mb-5">I create compelling media experiences and production-led brand stories that connect with audiences.</p>
+            <div class="mb-3">
+                <span class="text-400 fs-5">WhatsApp</span>
+                <p class="mb-0">+91 8056108609</p>
+            </div>
+            <div class="mb-3">
+                <span class="text-400 fs-5">Email</span>
+                <p class="mb-0">contact@johnsonproduction.com</p>
+            </div>
+            <div class="mb-3">
+                <span class="text-400 fs-5">Instagram</span>
+                <p class="mb-0">JohnsonProduction</p>
+            </div>
+            <div class="mb-3">
+                <span class="text-400 fs-5">Based in</span>
+                    <p class="mb-0">India</p>
+            </div>
+        </div>
+
+        <div class="contact-list">
+            <p class="text-400 fs-5 mb-2">Social</p>
+            <div class="d-md-flex d-none gap-3">
+                <a href="http://facebook.com">
+                    <i class="ri-facebook-circle-fill fs-18"></i>
+                </a>
+                <a href="http://twitter.com">
+                    <i class="ri-twitter-x-fill fs-18"></i>
+                </a>
+                <a href="http://linkedin.com">
+                    <i class="ri-linkedin-fill fs-18"></i>
+                </a>
+                <a href="http://github.com">
+                    <i class="ri-github-fill fs-18"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="offCanvas__overly"></div>
+ <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar button-bg-2">
+    <div class="mobile-header-wrapper-inner">
+        <div class="mobile-header-logo">
+            <a class="d-flex main-logo align-items-center d-inline-flex" href="#home">
+                <img src="assets/imgs/footer-1/logo.svg" alt="zelio" />
+                <span class="fs-4 ms-2 text-dark"></span>
+            </a>
+            <div class="burger-icon burger-icon-white border rounded-3">
+                <span class="burger-icon-top"></span>
+                <span class="burger-icon-mid"></span>
+                <span class="burger-icon-bottom"></span>
+            </div>
+        </div>
+        <div class="mobile-header-content-area">
+            <div class="perfect-scroll">
+                <div class="mobile-menu-wrap mobile-header-border">
+                    <nav>
+                        <ul class="mobile-menu font-heading ps-0">
+                            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</header>
+
+        <main>
+            <!-- prettier-ignore -->
+            <!--Home 1 Section 1-->
+<section id="home" class="section-hero-1 jp-hero-video-bright position-relative pt-200 pb-120 overflow-hidden">
+    <div class="container position-relative z-3">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <span>Meet Johnson—Where Creativity Meets Direction.</span>
+                <h1 class="hero-heading mb-3"><span>Ideas Directed. Visions Designed.</span><span class="text-primary">Results Delivered.</span></h1>
+                <p class="text-300 mb-6">Creative Director with 15+ years across film, television, and digital media, blending cinematography, design, motion, and storytelling.</p>
+                <a href="assets/Johnson_CV.pdf" class="btn btn-gradient me-2" target="_blank" rel="noopener" aria-label="Download Johnson Productions CV">
+                    Download CV
+                    <i class="ri-download-line ms-2"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline-secondary d-inline-flex align-items-center">
+                    <span>Hire me</span>
+                    <i class="ri-arrow-right-line ms-2"></i>
+                </a>
+                <p class="text-400 mt-6 mb-3">14 years with professional design software</p>
+                <div class="d-flex gap-3">
+                    <div class="brand-logo icon-xl icon-shape rounded-3 bg-900">
+                        <img src="assets/imgs/hero/hero-1/brand-1.png" alt="brand" />
+                    </div>
+                    <div class="brand-logo icon-xl icon-shape rounded-3 bg-900">
+                        <img src="assets/imgs/hero/hero-1/brand-2.png" alt="brand" />
+                    </div>
+                    <div class="brand-logo icon-xl icon-shape rounded-3 bg-900">
+                        <img src="assets/imgs/hero/hero-1/brand-3.png" alt="brand" />
+                    </div>
+                    <div class="brand-logo icon-xl icon-shape rounded-3 bg-900">
+                        <img src="assets/imgs/hero/hero-1/brand-4.png" alt="brand" />
+                    </div>
+                    <div class="brand-logo icon-xl icon-shape rounded-3 bg-900">
+                        <img src="assets/imgs/hero/hero-1/brand-5.png" alt="brand" />
+                    </div>
+                    <div class="brand-logo icon-xl icon-shape rounded-3 bg-900 d-none d-md-flex">
+                        <img src=" assets/imgs/hero/hero-1/brand-6.png" alt="brand" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape-1 position-absolute bottom-0 start-50 z-1 ms-10 d-none d-md-block">
+        <img class="position-relative z-1 filter-gray" src="assets/imgs/hero/hero-1/man.png" alt="man" />
+        <div class="position-absolute top-50 start-0 translate-middle z-0 mt-8 ms-10 ps-8">
+            <img class="ribbonRotate" src="assets/imgs/hero/hero-1/decorate.png" alt="zelio" />
+        </div>
+    </div>
+    <div class="jp-hero-video" aria-hidden="true">
+        <video autoplay loop muted playsinline preload="metadata" poster="assets/imgs/hero/hero-1/background.png">
+            <source src="assets/videos/home-hero-background.mp4" type="video/mp4" />
+        </video>
+    </div>
+</section>
+
+            <!--Static 1-->
+<div class="section-static-1 position-relative overflow-hidden z-0 py-8 bg-900">
+    <div class="container">
+        <div class="inner">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-auto col-md-6">
+                    <div class="counter-item-cover counter-item">
+                        <div class="content text-center mx-auto d-flex align-items-center">
+                            <span class="ds-3 count text-primary fw-medium my-0">+<span class="odometer ds-1 text-dark fw-semibold" data-count="15"></span></span>
+                            <div class="text-start ms-2">
+                                <p class="fs-5 mb-0 text-300">Years of</p>
+                                <p class="fs-5 mb-0 fw-bold">Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-auto col-md-6">
+                    <div class="counter-item-cover counter-item">
+                        <div class="content text-center mx-auto d-flex align-items-center">
+                            <span class="ds-3 count text-primary fw-medium my-0">+<span class="odometer ds-1 text-dark fw-semibold" data-count="1700"></span></span>
+                            <div class="text-start ms-2">
+                                <p class="fs-5 mb-0 text-300">Projects</p>
+                                <p class="fs-5 mb-0 fw-bold">Completed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-auto col-md-6">
+                    <div class="counter-item-cover counter-item">
+                        <div class="content text-center mx-auto d-flex align-items-center">
+                            <span class="ds-3 count text-primary fw-medium my-0">+<span class="odometer ds-1 text-dark fw-semibold" data-count="2000"></span></span>
+                            <div class="text-start ms-2">
+                                <p class="fs-5 mb-0 text-300">Satisfied</p>
+                                <p class="fs-5 mb-0 fw-bold">Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-auto col-md-6">
+                    <div class="counter-item-cover counter-item">
+                        <div class="content text-center mx-auto d-flex align-items-center">
+                            <span class="ds-3 count text-primary fw-medium my-0">+<span class="odometer ds-1 text-dark fw-semibold" data-count="12"></span></span>
+                            <div class="text-start ms-2">
+                                <p class="fs-5 mb-0 text-300">Countries</p>
+                                <p class="fs-5 mb-0 fw-bold">Served</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- Services -->
+<section id="services" class="section-service-1 pt-120 pb-5">
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-lg-7 me-auto">
+                <h3 class="ds-3 mt-3 mb-3 text-primary">Your Vision, Made Real!</h3>
+                <p class="fs-5 fw-medium text-200 mb-0">From the first thought to the finishing touch, we build ideas beautifully.</p>
+            </div>
+            <div class="col-lg-auto">
+                <a href="#contact" class="btn btn-gradient mt-lg-0 mt-5 ms-lg-auto">
+                    Discuss a project
+                    <i class="ri-arrow-right-up-line"></i>
+                </a>
+            </div>
+        </div>
+        <div class="row mt-6">
+            <div class="col-12">
+                <article class="single-service-card-1 tg-img-reveal-item w-100 border-top border-900 p-3" data-fx="1" data-img="assets/imgs/services/services-1/img-1.png" data-work-url="portfolio/cinematography/" role="link" tabindex="0">
+                    <div class="row g-3 align-items-center service-card-details">
+                        <div class="col-lg-5">
+                            <h4 class="service-card-title mb-2"><a href="portfolio/cinematography/"><span class="service-number">01.</span> Cinematography &amp; Film Production</a></h4>
+                            <p class="service-card-text text-200 mb-0">Visual storytelling from concept to screen.</p>
+                        </div>
+                        <ul class="service-card-list row list-unstyled mb-0 col-lg-6 text-200">
+                            <li class="col-md-6 mb-2">Cinematography and camera operation</li>
+                            <li class="col-md-6 mb-2">Commercials and promotional films</li>
+                            <li class="col-md-6 mb-2">Short films, music videos and documentaries</li>
+                            <li class="col-md-6 mb-2">Corporate films and interviews</li>
+                            <li class="col-md-6 mb-2">Lighting, shot composition and camera movement</li>
+                            <li class="col-md-6 mb-2">Creative direction and production planning</li>
+                        </ul>
+                        <div class="col-lg-1 text-end"><a href="portfolio/cinematography/" class="service-card-icon icon-shape icon-md rounded-circle border" aria-label="View cinematography and film production work"><i class="ri-arrow-right-up-line"></i></a></div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12">
+                <article class="single-service-card-1 tg-img-reveal-item w-100 border-top border-900 p-3" data-fx="1" data-img="assets/imgs/services/services-1/img-2.png" data-work-url="portfolio/photography/" role="link" tabindex="0">
+                    <div class="row g-3 align-items-center service-card-details">
+                        <div class="col-lg-5">
+                            <h4 class="service-card-title mb-2"><a href="portfolio/photography/"><span class="service-number">02.</span> Photography</a></h4>
+                            <p class="service-card-text text-200 mb-0">Capturing people, products, brands and stories.</p>
+                        </div>
+                        <ul class="service-card-list row list-unstyled mb-0 col-lg-6 text-200">
+                            <li class="col-md-6 mb-2">Portrait and fashion photography</li>
+                            <li class="col-md-6 mb-2">Product and commercial photography</li>
+                            <li class="col-md-6 mb-2">Brand and corporate photography</li>
+                            <li class="col-md-6 mb-2">Events and lifestyle photography</li>
+                            <li class="col-md-6 mb-2">Creative concepts and campaign shoots</li>
+                            <li class="col-md-6 mb-2">Photo retouching and image enhancement</li>
+                        </ul>
+                        <div class="col-lg-1 text-end"><a href="portfolio/photography/" class="service-card-icon icon-shape icon-md rounded-circle border" aria-label="View photography work"><i class="ri-arrow-right-up-line"></i></a></div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12">
+                <article class="single-service-card-1 tg-img-reveal-item w-100 border-top border-900 p-3" data-fx="1" data-img="assets/imgs/services/services-1/img-3.png" data-work-url="portfolio/post-production/" role="link" tabindex="0">
+                    <div class="row g-3 align-items-center service-card-details">
+                        <div class="col-lg-5">
+                            <h4 class="service-card-title mb-2"><a href="portfolio/post-production/"><span class="service-number">03.</span> Video Editing &amp; Post-Production</a></h4>
+                            <p class="service-card-text text-200 mb-0">Turning raw footage into compelling stories.</p>
+                        </div>
+                        <ul class="service-card-list row list-unstyled mb-0 col-lg-6 text-200">
+                            <li class="col-md-6 mb-2">Film and commercial editing</li>
+                            <li class="col-md-6 mb-2">YouTube videos and social media reels</li>
+                            <li class="col-md-6 mb-2">Music videos and promotional edits</li>
+                            <li class="col-md-6 mb-2">Documentary and interview editing</li>
+                            <li class="col-md-6 mb-2">Corporate films and event highlights</li>
+                            <li class="col-md-6 mb-2">Sound synchronisation and finishing</li>
+                            <li class="col-md-6 mb-2">Multi-format and platform-ready delivery</li>
+                        </ul>
+                        <div class="col-lg-1 text-end"><a href="portfolio/post-production/" class="service-card-icon icon-shape icon-md rounded-circle border" aria-label="View video editing and post-production work"><i class="ri-arrow-right-up-line"></i></a></div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12">
+                <article class="single-service-card-1 tg-img-reveal-item w-100 border-top border-900 p-3" data-fx="1" data-img="assets/imgs/services/services-1/img-4.png" data-work-url="portfolio/motion-vfx/" role="link" tabindex="0">
+                    <div class="row g-3 align-items-center service-card-details">
+                        <div class="col-lg-5">
+                            <h4 class="service-card-title mb-2"><a href="portfolio/motion-vfx/"><span class="service-number">04.</span> Animation, Motion Graphics &amp; VFX</a></h4>
+                            <p class="service-card-text text-200 mb-0">Bringing ideas to life through movement and visual effects.</p>
+                        </div>
+                        <ul class="service-card-list row list-unstyled mb-0 col-lg-6 text-200">
+                            <li class="col-md-6 mb-2">2D animation and explainer videos</li>
+                            <li class="col-md-6 mb-2">3D animation and product visualisation</li>
+                            <li class="col-md-6 mb-2">Motion graphics and animated typography</li>
+                            <li class="col-md-6 mb-2">Logo animation and title sequences</li>
+                            <li class="col-md-6 mb-2">Visual effects and compositing</li>
+                            <li class="col-md-6 mb-2">Rotoscoping and background removal</li>
+                            <li class="col-md-6 mb-2">Green-screen and screen-replacement work</li>
+                        </ul>
+                        <div class="col-lg-1 text-end"><a href="portfolio/motion-vfx/" class="service-card-icon icon-shape icon-md rounded-circle border" aria-label="View animation, motion graphics and visual effects work"><i class="ri-arrow-right-up-line"></i></a></div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12">
+                <article class="single-service-card-1 tg-img-reveal-item w-100 border-top border-900 p-3" data-fx="1" data-img="assets/imgs/services/services-1/img-5.png" data-work-url="portfolio/colour-grading/" role="link" tabindex="0">
+                    <div class="row g-3 align-items-center service-card-details">
+                        <div class="col-lg-5">
+                            <h4 class="service-card-title mb-2"><a href="portfolio/colour-grading/"><span class="service-number">05.</span> Colour Grading &amp; Correction</a></h4>
+                            <p class="service-card-text text-200 mb-0">Creating consistent, cinematic and polished visuals.</p>
+                        </div>
+                        <ul class="service-card-list row list-unstyled mb-0 col-lg-6 text-200">
+                            <li class="col-md-6 mb-2">Primary and secondary colour correction</li>
+                            <li class="col-md-6 mb-2">Cinematic colour grading</li>
+                            <li class="col-md-6 mb-2">Shot matching and exposure balancing</li>
+                            <li class="col-md-6 mb-2">Skin-tone refinement</li>
+                            <li class="col-md-6 mb-2">Look development and colour styling</li>
+                            <li class="col-md-6 mb-2">Log footage and RAW workflow finishing</li>
+                            <li class="col-md-6 mb-2">Final colour-managed delivery</li>
+                        </ul>
+                        <div class="col-lg-1 text-end"><a href="portfolio/colour-grading/" class="service-card-icon icon-shape icon-md rounded-circle border" aria-label="View colour grading and correction work"><i class="ri-arrow-right-up-line"></i></a></div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12">
+                <article class="single-service-card-1 tg-img-reveal-item w-100 border-top border-900 p-3" data-fx="1" data-img="assets/imgs/services/services-1/img-2.png" data-work-url="portfolio/brand-design/" role="link" tabindex="0">
+                    <div class="row g-3 align-items-center service-card-details">
+                        <div class="col-lg-5">
+                            <h4 class="service-card-title mb-2"><a href="portfolio/brand-design/"><span class="service-number">06.</span> Graphic Design &amp; Brand Identity</a></h4>
+                            <p class="service-card-text text-200 mb-0">Building distinctive and consistent brand visuals.</p>
+                        </div>
+                        <ul class="service-card-list row list-unstyled mb-0 col-lg-6 text-200">
+                            <li class="col-md-6 mb-2">Logo design and brand identity systems</li>
+                            <li class="col-md-6 mb-2">Posters, flyers and brochures</li>
+                            <li class="col-md-6 mb-2">Social media creatives and advertising banners</li>
+                            <li class="col-md-6 mb-2">Packaging and product graphics</li>
+                            <li class="col-md-6 mb-2">Typography and layout design</li>
+                            <li class="col-md-6 mb-2">Presentation and marketing materials</li>
+                            <li class="col-md-6 mb-2">Brand guidelines and visual assets</li>
+                        </ul>
+                        <div class="col-lg-1 text-end"><a href="portfolio/brand-design/" class="service-card-icon icon-shape icon-md rounded-circle border" aria-label="View graphic design and brand identity work"><i class="ri-arrow-right-up-line"></i></a></div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12">
+                <article class="single-service-card-1 tg-img-reveal-item w-100 border-top border-900 p-3" data-fx="1" data-img="assets/imgs/services/services-1/img-3.png" data-work-url="portfolio/web-design/" role="link" tabindex="0">
+                    <div class="row g-3 align-items-center service-card-details">
+                        <div class="col-lg-5">
+                            <h4 class="service-card-title mb-2"><a href="portfolio/web-design/"><span class="service-number">07.</span> Website Design &amp; Development</a></h4>
+                            <p class="service-card-text text-200 mb-0">Creating engaging digital experiences for modern brands.</p>
+                        </div>
+                        <ul class="service-card-list row list-unstyled mb-0 col-lg-6 text-200">
+                            <li class="col-md-6 mb-2">Website design and development</li>
+                            <li class="col-md-6 mb-2">UI/UX design and wireframing</li>
+                            <li class="col-md-6 mb-2">Landing pages and portfolio websites</li>
+                            <li class="col-md-6 mb-2">Responsive desktop, tablet and mobile layouts</li>
+                            <li class="col-md-6 mb-2">HTML, CSS and JavaScript implementation</li>
+                            <li class="col-md-6 mb-2">Website animation and interactive elements</li>
+                            <li class="col-md-6 mb-2">Website optimisation and launch support</li>
+                        </ul>
+                        <div class="col-lg-1 text-end"><a href="portfolio/web-design/" class="service-card-icon icon-shape icon-md rounded-circle border" aria-label="View website design and development work"><i class="ri-arrow-right-up-line"></i></a></div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12">
+                <article class="single-service-card-1 tg-img-reveal-item w-100 border-top border-900 p-3" data-fx="1" data-img="assets/imgs/services/services-1/img-4.png" data-work-url="portfolio/product-visuals/" role="link" tabindex="0">
+                    <div class="row g-3 align-items-center service-card-details">
+                        <div class="col-lg-5">
+                            <h4 class="service-card-title mb-2"><a href="portfolio/product-visuals/"><span class="service-number">08.</span> Product Design &amp; Visualisation</a></h4>
+                            <p class="service-card-text text-200 mb-0">Presenting products with clarity, detail and visual impact.</p>
+                        </div>
+                        <ul class="service-card-list row list-unstyled mb-0 col-lg-6 text-200">
+                            <li class="col-md-6 mb-2">Product concept development</li>
+                            <li class="col-md-6 mb-2">Packaging and label design</li>
+                            <li class="col-md-6 mb-2">Product mockups and presentation visuals</li>
+                            <li class="col-md-6 mb-2">3D product rendering where applicable</li>
+                            <li class="col-md-6 mb-2">Product photography and retouching</li>
+                            <li class="col-md-6 mb-2">E-commerce product creatives</li>
+                        </ul>
+                        <div class="col-lg-1 text-end"><a href="portfolio/product-visuals/" class="service-card-icon icon-shape icon-md rounded-circle border" aria-label="View product design and visualisation work"><i class="ri-arrow-right-up-line"></i></a></div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12">
+                <article class="single-service-card-1 tg-img-reveal-item w-100 border-top border-bottom border-900 p-3" data-fx="1" data-img="assets/imgs/services/services-1/img-5.png" data-work-url="portfolio/ai-creative/" role="link" tabindex="0">
+                    <div class="row g-3 align-items-center service-card-details">
+                        <div class="col-lg-5">
+                            <h4 class="service-card-title mb-2"><a href="portfolio/ai-creative/"><span class="service-number">09.</span> AI-Powered Creative Production</a></h4>
+                            <p class="service-card-text text-200 mb-0">Combining creative direction with emerging visual technologies.</p>
+                        </div>
+                        <ul class="service-card-list row list-unstyled mb-0 col-lg-6 text-200">
+                            <li class="col-md-6 mb-2">AI-assisted concept development</li>
+                            <li class="col-md-6 mb-2">AI image generation and visual exploration</li>
+                            <li class="col-md-6 mb-2">AI video concepts and creative sequences</li>
+                            <li class="col-md-6 mb-2">Background and scene generation</li>
+                            <li class="col-md-6 mb-2">Creative compositing and image enhancement</li>
+                            <li class="col-md-6 mb-2">AI-assisted production workflows</li>
+                        </ul>
+                        <div class="col-lg-1 text-end"><a href="portfolio/ai-creative/" class="service-card-icon icon-shape icon-md rounded-circle border" aria-label="View AI-powered creative production work"><i class="ri-arrow-right-up-line"></i></a></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <section class="section-work pt-120 pb-150">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-lg-auto">
+                        <div class="text-center">
+                            <div class="btn btn-gradient d-inline-block text-uppercase">Recent Work</div>
+                            <h1 class="ds-3 mt-3 mb-4 text-dark">Explore <span class="text-300">My Latest Work and Discover the</span> Craftsmanship Behind <span class="text-300">Each Design</span></h1>
+                            <p class="text-300 fs-5">Explore my latest work and discover the craftsmanship behind each design:<br />a detailed look into how I bring innovation and creativity to life.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="card-scroll mt-8">
+                        <div class="cards">
+                            <div class="card-custom" data-index="0"><div class="card__inner bg-6 p-lg-6 p-md-4 p-3"><div class="card__image-container zoom-img position-relative"><img class="card__image" src="assets/imgs/work/img-1.png" alt="E-commerce website redesign" /></div><div class="card__content px-md-4 px-3"><div class="card__title mb-0 mb-lg-2"><p class="text-primary mb-0 mb-md-2">UI/UX</p><h2 class="fw-semibold">E-commerce Website Redesign</h2></div><p class="text-300 mb-lg-auto mb-md-4 mb-3">An interactive shopping experience with intuitive navigation and engaging interface design.</p><div class="d-md-flex content"><p class="mb-0 fs-7 text-dark text-uppercase w-40">Client</p><p class="mb-0 card__description text-300 fs-6">Conceptual JSC</p></div><div class="d-md-flex content"><p class="mb-0 fs-7 text-dark text-uppercase w-40">Tools</p><p class="mb-0 card__description text-300 fs-6">Figma, Sketch, Photoshop, Framer</p></div></div></div></div>
+                            <div class="card-custom" data-index="1"><div class="card__inner bg-6 p-lg-6 p-md-4 p-3"><div class="card__image-container zoom-img position-relative"><img class="card__image" src="assets/imgs/work/img-2.png" alt="Fitness app UI/UX" /></div><div class="card__content px-md-4 px-3"><div class="card__title mb-0 mb-lg-2"><p class="text-primary mb-0 mb-md-2">PRODUCT UI/UX DESIGN</p><h2 class="fw-semibold">Product Design — Vinayara</h2></div><p class="text-300 mb-lg-auto mb-md-4 mb-3">Designed a modern and engaging product experience for Vinayara, inspired by the visual language and usability of Relaty. The focus was on creating a clean, intuitive interface with a strong visual hierarchy and user-friendly interactions.</p><div class="d-md-flex content"><p class="mb-0 fs-7 text-dark text-uppercase w-40">Client</p><p class="mb-0 card__description text-300 fs-6">Vinayara</p></div><div class="d-md-flex content"><p class="mb-0 fs-7 text-dark text-uppercase w-40">Tools</p><p class="mb-0 card__description text-300 fs-6">Adobe Photoshop, Adobe Illustrator</p></div><div class="d-md-flex content"><p class="mb-0 fs-7 text-dark text-uppercase w-40">Role</p><p class="mb-0 card__description text-300 fs-6">Product UI/UX Designer</p></div></div></div></div>
+                            <div class="card-custom" data-index="2"><div class="card__inner bg-6 p-lg-6 p-md-4 p-3"><div class="card__image-container zoom-img position-relative"><img class="card__image" src="assets/imgs/work/img-3.png" alt="Travel booking platform" /></div><div class="card__content px-md-4 px-3"><div class="card__title mb-0 mb-lg-2"><p class="text-primary mb-0 mb-md-2">WEB DEVELOPMENT</p><h2 class="fw-semibold">Travel Booking Platform</h2></div><p class="text-300 mb-lg-auto mb-md-4 mb-3">A streamlined platform that makes discovering and booking a trip feel effortless.</p><div class="d-md-flex content"><p class="mb-0 fs-7 text-dark text-uppercase w-40">Client</p><p class="mb-0 card__description text-300 fs-6">Conceptual JSC</p></div><div class="d-md-flex content"><p class="mb-0 fs-7 text-dark text-uppercase w-40">Tools</p><p class="mb-0 card__description text-300 fs-6">Figma, Sketch, Photoshop, Framer</p></div></div></div></div>
+                            <div class="card-custom" data-index="3"><div class="card__inner bg-6 p-lg-6 p-md-4 p-3"><div class="card__image-container zoom-img position-relative"><img class="card__image" src="assets/imgs/work/img-4.png" alt="Educational platform UI/UX" /></div><div class="card__content px-md-4 px-3"><div class="card__title mb-0 mb-lg-2"><p class="text-primary mb-0 mb-md-2">VISUAL DESIGN</p><h2 class="fw-semibold">Educational Platform UI/UX</h2></div><p class="text-300 mb-lg-auto mb-md-4 mb-3">An accessible learning platform built around clear content, intuitive navigation, and student engagement.</p><div class="d-md-flex content"><p class="mb-0 fs-7 text-dark text-uppercase w-40">Client</p><p class="mb-0 card__description text-300 fs-6">Conceptual JSC</p></div><div class="d-md-flex content"><p class="mb-0 fs-7 text-dark text-uppercase w-40">Tools</p><p class="mb-0 card__description text-300 fs-6">Figma, Sketch, Photoshop, Framer</p></div></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+
+            <!-- projects 1 -->
+<div id="portfolio" class="section-projects-1 position-relative pt-4 pb-2 bg-900">
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-lg-7 me-auto">
+                <h3 class="ds-3 mt-0 mb-2 text-primary">View My Portfolio</h3>
+                <span class="fs-5 fw-medium text-200">
+                    Explore the work and the thinking behind it.<br class="d-none d-md-block" />
+                    Discover what I can bring to your next project.
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-900 fillter-project" data-background="assets/imgs/projects/projects-1/background.png">
+    <div class="container">
+        <div class="text-start">
+            <div class="button-group filter-button-group filter-menu-active">
+                <button class="btn btn-md btn-filter text-uppercase active" data-filter="*">All Projects</button>
+                        <a id="portfolio-cinematography" href="portfolio/cinematography/" class="btn btn-md btn-filter">🎥 Cinematography</a>
+                        <a id="portfolio-photography" href="portfolio/photography/" class="btn btn-md btn-filter">📸 Photography</a>
+                        <a id="portfolio-post-production" href="portfolio/post-production/" class="btn btn-md btn-filter">✂️ Post-Production</a>
+                        <a id="portfolio-motion-vfx" href="portfolio/motion-vfx/" class="btn btn-md btn-filter">✨ Motion &amp; VFX</a>
+                        <a id="portfolio-colour-grading" href="portfolio/colour-grading/" class="btn btn-md btn-filter">🎨 Colour Grading</a>
+                        <a id="portfolio-brand-design" href="portfolio/brand-design/" class="btn btn-md btn-filter">🖌️ Brand Design</a>
+                        <a id="portfolio-web-design" href="portfolio/web-design/" class="btn btn-md btn-filter">🌐 Web Design</a>
+                        <a id="portfolio-product-visuals" href="portfolio/product-visuals/" class="btn btn-md btn-filter">📦 Product Visuals</a>
+                        <a id="portfolio-ai-creative" href="portfolio/ai-creative/" class="btn btn-md btn-filter">🤖 AI Creative</a>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- Skills 1 -->
+<section class="section-skills-1 position-relative section-padding bg-900">
+    <div class="container">
+        <div class="row">
+            <div class="text-center mb-7">
+                <h3 class="ds-3 mt-3 mb-3 text-primary">My Skills</h3>
+                <span class="fs-5 fw-medium text-200">
+                    I thrive on turning complex problems into simple, beautiful
+                    <br class="d-md-block d-none" />
+                    solutions that enhance user satisfaction.
+                </span>
+            </div>
+            <div class="d-flex flex-wrap flex-lg-nowrap justify-content-center gap-3 mb-7 px-6">
+                <div class="skills">
+                    <div class="skills-icon mb-5">
+                        <img src="assets/imgs/skills/skills-1/icon-1.png" alt="zelio" />
+                    </div>
+                    <div class="skills-ratio text-center">
+                        <h3 class="count fw-semibold my-0"><span class="odometer fw-semibold" data-count="98"></span>%</h3>
+                        <p class="text-400 fw-medium text-uppercase">DaVinci Resolve</p>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="skills-icon mb-5">
+                        <img src="assets/imgs/skills/skills-1/icon-2.png" alt="zelio" />
+                    </div>
+                    <div class="skills-ratio text-center">
+                        <h3 class="count fw-semibold my-0"><span class="odometer fw-semibold" data-count="90"></span>%</h3>
+                        <p class="text-400 fw-medium text-uppercase">Avid</p>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="skills-icon mb-5">
+                        <img src="assets/imgs/skills/skills-1/icon-3.png" alt="zelio" />
+                    </div>
+                    <div class="skills-ratio text-center">
+                        <h3 class="count fw-semibold my-0"><span class="odometer fw-semibold" data-count="75"></span>%</h3>
+                        <p class="text-400 fw-medium text-uppercase">Illustrator</p>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="skills-icon mb-5">
+                        <img src="assets/imgs/skills/skills-1/icon-4.png" alt="zelio" />
+                    </div>
+                    <div class="skills-ratio text-center">
+                        <h3 class="count fw-semibold my-0"><span class="odometer fw-semibold" data-count="99"></span>%</h3>
+                        <p class="text-400 fw-medium text-uppercase">Final Cut Pro</p>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="skills-icon mb-5">
+                        <img src="assets/imgs/skills/skills-1/icon-5.png" alt="zelio" />
+                    </div>
+                    <div class="skills-ratio text-center">
+                        <h3 class="count fw-semibold my-0"><span class="odometer fw-semibold" data-count="89"></span>%</h3>
+                        <p class="text-400 fw-medium text-uppercase">Photoshop</p>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="skills-icon mb-5">
+                        <img src="assets/imgs/skills/skills-1/icon-6.png" alt="zelio" />
+                    </div>
+                    <div class="skills-ratio text-center">
+                        <h3 class="count fw-semibold my-0"><span class="odometer fw-semibold" data-count="85"></span>%</h3>
+                        <p class="text-400 fw-medium text-uppercase">Figma</p>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="skills-icon mb-5">
+                        <img src="assets/imgs/skills/skills-1/icon-7.png" alt="zelio" />
+                    </div>
+                    <div class="skills-ratio text-center">
+                        <h3 class="count fw-semibold my-0"><span class="odometer fw-semibold" data-count="93"></span>%</h3>
+                        <p class="text-400 fw-medium text-uppercase">Higgsfield</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <p class="fs-5 text-200 mb-0">We use professional, industry-standard licensed software to deliver high-quality creative work with precision, performance, and reliability.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <!-- brands 1 -->
+<section class="section-brands-1 section-padding">
+    <div class="container">
+        <div class="text-center">
+            <h2>Trusted by industry leaders</h2>
+            <p class="text-300">
+                I have collaborated with many large corporations, companies, and agencies around
+                <br />
+                the world in many fields of design and consulting
+            </p>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <!-- Carausel Scroll -->
+        <div class="carouselTicker carouselTicker-right mt-5 position-relative z-1">
+            <ul class="carouselTicker__list">
+                <li class="carouselTicker__item">
+                    <img src="assets/imgs/brands/brands-1/logo-1.png" alt="zelio" />
+                </li>
+                <li class="carouselTicker__item">
+                    <img src="assets/imgs/brands/brands-1/logo-2.png" alt="zelio" />
+                </li>
+                <li class="carouselTicker__item">
+                    <img src="assets/imgs/brands/brands-1/logo-3.png" alt="zelio" />
+                </li>
+                <li class="carouselTicker__item">
+                    <img src="assets/imgs/brands/brands-1/logo-4.png" alt="zelio" />
+                </li>
+                <li class="carouselTicker__item">
+                    <img src="assets/imgs/brands/brands-1/logo-5.png" alt="zelio" />
+                </li>
+                <li class="carouselTicker__item">
+                    <img src="assets/imgs/brands/brands-1/logo-6.png" alt="zelio" />
+                </li>
+                <li class="carouselTicker__item">
+                    <img src="assets/imgs/brands/brands-1/logo-7.png" alt="zelio" />
+                </li>
+                <li class="carouselTicker__item">
+                    <img src="assets/imgs/brands/brands-1/logo-8.png" alt="zelio" />
+                </li>
+                <li class="carouselTicker__item">
+                    <img src="assets/imgs/brands/brands-1/logo-9.png" alt="zelio" />
+                </li>
+                <li class="carouselTicker__item">
+                    <img src="assets/imgs/brands/brands-1/logo-10.png" alt="zelio" />
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+            <!-- testimonials 1 -->
+<section class="section-testimonials-1 position-relative pt-120 pb-120 bg-900 overflow-hidden">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h3 class="ds-3 mt-3 mb-3 text-primary">Client's Testimonials</h3>
+                <span class="fs-5 fw-medium text-200">
+                    Here’s what the people and brands we’ve worked with have to say.
+                </span>
+                <div class="row mt-8">
+                    <div class="swiper slider-2 pt-2 pb-3">
+                        <div class="swiper-wrapper">
+                            <!-- prettier-ignore -->
+                            <div class="swiper-slide">
+    <div class="bg-white card-testimonial-1 p-lg-7 p-md-5 mx-3 mx-md-0 p-4 border-2 rounded-4 position-relative">
+        <div class="mb-6 logo">
+            <img class="" src="assets/imgs/testimonials/testimonials-1/logo-1.png" alt="logo" />
+        </div>
+        <div class="d-flex mb-5">
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-500 "></i>
+        </div>
+        <h6 class="mb-7">“Working with William was an absolute pleasure. His attention to detail and user-focused design approach significantly improved our product's usability”</h6>
+        <a href="#" class="d-flex align-items-center">
+            <img class="icon_65 avatar" src="assets/imgs/testimonials/testimonials-1/avatar-1.png" alt="zelio" />
+            <h6 class="ms-2 mb-0">Lawrence Joseph <span class="fs-6 fw-regular"> - Founder of Amen FM, Canada 🇨🇦 </span></h6>
+        </a>
+        <div class="position-absolute top-0 end-0 m-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                <g clip-path="url(#clip0_551_13914)">
+                    <path d="M0 29.7144H11.1428L3.71422 44.5715H14.8571L22.2857 29.7144V7.42871H0V29.7144Z" fill="#D1D5DB" />
+                    <path d="M29.7148 7.42871V29.7144H40.8577L33.4291 44.5715H44.5719L52.0005 29.7144V7.42871H29.7148Z" fill="#D1D5DB" />
+                </g>
+                <defs>
+                    <clipPath>
+                        <rect width="52" height="52" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide">
+    <div class="bg-white card-testimonial-1 p-lg-7 p-md-5 mx-3 mx-md-0 p-4 border-2 rounded-4 position-relative">
+        <div class="mb-6 logo">
+            <img class="" src="assets/imgs/testimonials/testimonials-1/logo-2.png" alt="logo" />
+        </div>
+        <div class="d-flex mb-5">
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-500 text-primary"></i>
+        </div>
+        <h6 class="mb-7">“working with Johnson was an absolute pleasure. His attention to detail and user-focused design approach significantly improved our product's usability”</h6>
+        <a href="#text-primary" class="d-flex align-items-center">
+            <img class="icon_65 avatar" src="assets/imgs/testimonials/testimonials-1/avatar-2.png" alt="zelio" />
+            <h6 class="ms-2 mb-0">John Doe <span class="fs-6 fw-regular"> - Head of Legal and Compliance, Tech Innovators</span></h6>
+        </a>
+        <div class="position-absolute top-0 end-0 m-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                <g clip-path="url(#clip0_551_13914)">
+                    <path d="M0 29.7144H11.1428L3.71422 44.5715H14.8571L22.2857 29.7144V7.42871H0V29.7144Z" fill="#D1D5DB" />
+                    <path d="M29.7148 7.42871V29.7144H40.8577L33.4291 44.5715H44.5719L52.0005 29.7144V7.42871H29.7148Z" fill="#D1D5DB" />
+                </g>
+                <defs>
+                    <clipPath>
+                        <rect width="52" height="52" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide">
+    <div class="bg-white card-testimonial-1 p-lg-7 p-md-5 mx-3 mx-md-0 p-4 border-2 rounded-4 position-relative">
+        <div class="mb-6 logo">
+            <img class="" src="assets/imgs/testimonials/testimonials-1/logo-1.png" alt="logo" />
+        </div>
+        <div class="d-flex mb-5">
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-primary"></i>
+        </div>
+        <h6 class="mb-7">“We truly appreciate your creativity, time, and dedication in helping us present our message in a professional and meaningful way.
+Thank you, Johnson Productions, for your valuable contribution!”</h6>
+        <a href="#" class="d-flex align-items-center">
+            <img class="icon_65 avatar" src="assets/imgs/testimonials/testimonials-1/avatar-1.png" alt="zelio" />
+            <h6 class="ms-2 mb-0">Lawrence Joseph <span class="fs-6 fw-regular"> - Founder of Amen FM, Canada 🇨🇦 </span></h6>
+        </a>
+        <div class="position-absolute top-0 end-0 m-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                <g clip-path="url(#clip0_551_13914)">
+                    <path d="M0 29.7144H11.1428L3.71422 44.5715H14.8571L22.2857 29.7144V7.42871H0V29.7144Z" fill="#D1D5DB" />
+                    <path d="M29.7148 7.42871V29.7144H40.8577L33.4291 44.5715H44.5719L52.0005 29.7144V7.42871H29.7148Z" fill="#D1D5DB" />
+                </g>
+                <defs>
+                    <clipPath>
+                        <rect width="52" height="52" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide">
+    <div class="bg-white card-testimonial-1 p-lg-7 p-md-5 mx-3 mx-md-0 p-4 border-2 rounded-4 position-relative">
+        <div class="mb-6 logo">
+            <img class="" src="assets/imgs/testimonials/testimonials-1/logo-2.png" alt="logo" />
+        </div>
+        <div class="d-flex mb-5">
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-500 text-primary"></i>
+        </div>
+        <h6 class="mb-7">“Working with Johnson was an absolute pleasure. His attention to detail and user-focused design approach significantly improved our product's usability”</h6>
+        <a href="#text-primary" class="d-flex align-items-center">
+            <img class="icon_65 avatar" src="assets/imgs/testimonials/testimonials-1/avatar-2.png" alt="zelio" />
+            <h6 class="ms-2 mb-0">John Doe <span class="fs-6 fw-regular"> - Head of Legal and Compliance, Tech Innovators</span></h6>
+        </a>
+        <div class="position-absolute top-0 end-0 m-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                <g clip-path="url(#clip0_551_13914)">
+                    <path d="M0 29.7144H11.1428L3.71422 44.5715H14.8571L22.2857 29.7144V7.42871H0V29.7144Z" fill="#D1D5DB" />
+                    <path d="M29.7148 7.42871V29.7144H40.8577L33.4291 44.5715H44.5719L52.0005 29.7144V7.42871H29.7148Z" fill="#D1D5DB" />
+                </g>
+                <defs>
+                    <clipPath>
+                        <rect width="52" height="52" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide">
+    <div class="bg-white card-testimonial-1 p-lg-7 p-md-5 mx-3 mx-md-0 p-4 border-2 rounded-4 position-relative">
+        <div class="mb-6 logo">
+            <img class="" src="assets/imgs/testimonials/testimonials-1/logo-1.png" alt="logo" />
+        </div>
+        <div class="d-flex mb-5">
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-primary"></i>
+        </div>
+        <h6 class="mb-7">“We truly appreciate your creativity, time, and dedication in helping us present our message in a professional and meaningful way.
+Thank you, Johnson Productions, for your valuable contribution!”</h6>
+        <a href="#" class="d-flex align-items-center">
+            <img class="icon_65 avatar" src="assets/imgs/testimonials/testimonials-1/avatar-1.png" alt="zelio" />
+            <h6 class="ms-2 mb-0">Lawrence Joseph <span class="fs-6 fw-regular"> - Founder of Amen FM, Canada 🇨🇦 </span></h6>
+        </a>
+        <div class="position-absolute top-0 end-0 m-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                <g clip-path="url(#clip0_551_13914)">
+                    <path d="M0 29.7144H11.1428L3.71422 44.5715H14.8571L22.2857 29.7144V7.42871H0V29.7144Z" fill="#D1D5DB" />
+                    <path d="M29.7148 7.42871V29.7144H40.8577L33.4291 44.5715H44.5719L52.0005 29.7144V7.42871H29.7148Z" fill="#D1D5DB" />
+                </g>
+                <defs>
+                    <clipPath>
+                        <rect width="52" height="52" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide">
+    <div class="bg-white card-testimonial-1 p-lg-7 p-md-5 mx-3 mx-md-0 p-4 border-2 rounded-4 position-relative">
+        <div class="mb-6 logo">
+            <img class="" src="assets/imgs/testimonials/testimonials-1/logo-2.png" alt="logo" />
+        </div>
+        <div class="d-flex mb-5">
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-primary"></i>
+            <i class="ri-star-fill fs-7 text-500 text-primary"></i>
+        </div>
+        <h6 class="mb-7">“Working with Johnson was an absolute pleasure. His attention to detail and user-focused design approach significantly improved our product's usability”</h6>
+        <a href="#text-primary" class="d-flex align-items-center">
+            <img class="icon_65 avatar" src="assets/imgs/testimonials/testimonials-1/avatar-2.png" alt="zelio" />
+            <h6 class="ms-2 mb-0">John Doe <span class="fs-6 fw-regular"> - Head of Legal and Compliance, Tech Innovators</span></h6>
+        </a>
+        <div class="position-absolute top-0 end-0 m-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                <g clip-path="url(#clip0_551_13914)">
+                    <path d="M0 29.7144H11.1428L3.71422 44.5715H14.8571L22.2857 29.7144V7.42871H0V29.7144Z" fill="#D1D5DB" />
+                    <path d="M29.7148 7.42871V29.7144H40.8577L33.4291 44.5715H44.5719L52.0005 29.7144V7.42871H29.7148Z" fill="#D1D5DB" />
+                </g>
+                <defs>
+                    <clipPath>
+                        <rect width="52" height="52" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+    </div>
+</div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="text-center mt-8 position-relative z-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape-1 position-absolute bottom-0 start-50 z-1 ms-10 ps-10 d-none d-md-block">
+        <img class="position-relative z-1" src="assets/imgs/testimonials/testimonials-1/man.png" alt="man" />
+        <div class="position-absolute top-50 start-50 translate-middle z-0 mt-5">
+            <img class="ribbonRotate" src="assets/imgs/testimonials/testimonials-1/decorate.png" alt="zelio" />
+        </div>
+    </div>
+</section>
+
+            <!-- Contact 1-->
+<section id="contact" class="section-contact-1 bg-900 position-relative pt-150 pb-lg-250 pb-150 overflow-hidden">
+    <div class="container position-relative z-1">
+        <h3 class="ds-3 mt-3 mb-3 text-primary">Get in touch</h3>
+        <span class="fs-5 fw-medium text-200">
+            I create compelling media experiences and production-led brand stories that connect with audiences. If you
+            <br />
+            have a project in mind or just want to chat about design, feel free to reach out!
+        </span>
+        <div class="row mt-8">
+            <div class="col-lg-4 d-flex flex-column">
+                <div class="d-flex align-items-center mb-4 position-relative d-inline-flex">
+                    <div class="bg-white icon-flip position-relative icon-shape icon-xxl border-linear-2 border-2 rounded-4">
+                        <i class="ri-whatsapp-fill text-primary fs-26"></i>
+                    </div>
+                    <div class="ps-3">
+                        <span class="text-400 fs-5">WhatsApp</span>
+                        <h6 class="mb-0">+91 8056108609</h6>
+                    </div>
+                    <a href="https://wa.me/918056108609?text=Hi%20Johnson%20Production%2C%20I%20want%20to%20discuss%20a%20project." target="_blank" rel="noopener" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Send a WhatsApp message"></a>
+                </div>
+                <div class="d-flex align-items-center mb-4 position-relative d-inline-flex">
+                    <div class="bg-white icon-flip position-relative icon-shape icon-xxl border-linear-2 border-2 rounded-4">
+                        <i class="ri-mail-fill text-primary fs-26"></i>
+                    </div>
+                    <div class="ps-3">
+                        <span class="text-400 fs-5">Email</span>
+                        <h6 class="mb-0">contact@johnsonpostproductions@gmail.com</h6>
+                    </div>
+                    <a href="mailto:contact@johnsonpostproductions@gmail.com" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                </div>
+                <div class="d-flex align-items-center mb-4 position-relative d-inline-flex">
+                    <div class="bg-white icon-flip position-relative icon-shape icon-xxl border-linear-2 border-2 rounded-4">
+                        <i class="ri-skype-fill text-primary fs-26"></i>
+                    </div>
+                    <div class="ps-3">
+                        <span class="text-400 fs-5">Instagram</span>
+                        <h6 class="mb-0">JohnsonProduction</h6>
+                    </div>
+                    <a href="skype:SKYPENAME?add" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                </div>
+                <div class="d-flex align-items-center mb-4 position-relative d-inline-flex">
+                    <div class="bg-white icon-flip position-relative icon-shape icon-xxl border-linear-2 border-2 rounded-4">
+                        <i class="ri-map-2-fill text-primary fs-26"></i>
+                    </div>
+                    <div class="ps-3">
+                        <span class="text-400 fs-5">Address</span>
+                        <h6 class="mb-0">0811 Erdman Prairie, Joaville CA</h6>
+                    </div>
+                    <a href="https://maps.google.com/maps?q=1st+avenue,New+York" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                </div>
+            </div>
+            <div class="col-lg-7 offset-lg-1 ps-lg-0 pt-5 pt-lg-0">
+                <div class="position-relative">
+                    <div class="position-relative z-2">
+                        <h3>Leave a messge</h3>
+                        <form action="#">
+                            <div class="row mt-3">
+                                <div class="col-md-6 ">
+                                    <label class="mb-1 mt-3 text-dark" for="name">Your name <span class="text-primary">*</span></label>
+                                    <input type="text" class="form-control border rounded-3" id="name" name="name" placeholder="John Doe" aria-label="username" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="mb-1 mt-3 text-dark" for="email">Email address <span class="text-primary">*</span></label>
+                                    <input type="text" class="form-control border rounded-3" id="email" name="email" placeholder="contact.john@gmail.com" aria-label="email" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="mb-1 mt-3 text-dark" for="phone">Your phone <span class="text-primary">*</span></label>
+                                    <input type="text" class="form-control border rounded-3" id="phone" name="phone" placeholder="+01 234 567 89" aria-label="phone" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="mb-1 mt-3 text-dark" for="subject">Subject <span class="text-primary">*</span></label>
+                                    <input type="text" class="form-control border rounded-3" id="subject" name="subject" placeholder="I want to contact for...." aria-label="subject" />
+                                </div>
+                                <div class="col-12">
+                                    <label class="mb-1 mt-3 text-dark" for="message">Message <span class="text-primary">*</span></label>
+                                    <textarea class="form-control border rounded-3 pb-10" id="message" name="message" placeholder="Your message here...." aria-label="With textarea"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-gradient mt-3">
+                                        Send Message
+                                        <i class="ri-arrow-right-up-line"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="z-0 bg-primary-dark rectangle-bg z-1 rounded-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="contact-logo" src="assets/imgs/template/johnson-production-logo.png" alt="Johnson Production logo" />
+</section>
+
+        </main>
+        <!-- prettier-ignore -->
+        <!-- Footer -->
+<footer>
+    <div class="section-footer position-relative pt-60 pb-60 bg-secondary-1">
+        <div class="container position-relative z-1">
+            <div class="text-center">
+                <a class="d-flex main-logo align-items-center d-inline-flex" href="#home">
+                    <img src="assets/imgs/footer-1/logo.svg" alt="" />
+                    <span class="fs-4 ms-2 text-white-keep">Johnson Production</span>
+                </a>
+                <div class="navigation d-none d-md-flex align-items-center justify-content-center flex-wrap gap-4 my-4">
+                    <a href="#home" class="fs-5">
+                        Home
+                    </a>                   
+                    <a href="#services" class="fs-5">
+                        Services
+                    </a>
+                    <a href="#portfolio" class="fs-5">
+                        Portfolio
+                    </a>
+                    <a href="#contact" class="fs-5">
+                        Contact
+                    </a>
+                </div>
+            </div>
+            <div class="row text-center py-4">
+                <span class="fs-6 text-white-keep d-inline-block px-2 py-1 rounded-2 border border-white border-opacity-25 bg-white bg-opacity-10">© 2027 All Rights Reserved by <span><a href="#" class="text-white fw-bold">Johnson Production</a></span>
+            </div>
+        </div>
+        <div class="position-absolute top-0 start-0 w-100 h-100 z-0" data-background="assets/imgs/footer-1/background.png "></div>
+    </div>
+</footer>
+        <!-- Scroll top -->
+<div class="btn-scroll-top @@style">
+    <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
+        <path d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z" />
+    </svg>
+</div>
+
+        <!-- Libs JS -->
+<script src="assets/js/vendors/jquery-3.7.1.min.js"></script>
+<script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+<script src="assets/js/vendors/swiper-bundle.min.js"></script>
+<script src="assets/js/vendors/aos.js"></script>
+<script src="assets/js/vendors/wow.min.js"></script>
+<script src="assets/js/vendors/smart-stick-nav.js"></script>
+<script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/vendors/gsap.min.js"></script>
+<script src="assets/js/vendors/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/vendors/isotope.pkgd.min.js"></script>
+<script src="assets/js/vendors/ScrollTrigger.min.js"></script>
+<script src="assets/js/vendors/jquery.carouselTicker.min.js"></script>
+<script src="assets/js/vendors/jquery.odometer.min.js"></script>
+<script src="assets/js/vendors/jquery.appear.js"></script>
+<script src="assets/js/vendors/gsap-custom.js"></script>
+<script src="assets/js/imageRevealHover.js"></script>
+<script src="assets/js/vendors/aat.min.js"></script>
+<!-- Theme JS -->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/contact-config.js"></script>
+<script src="assets/js/contact-components.js"></script>
+<script>
+    document.querySelectorAll(".single-service-card-1[data-work-url]").forEach((card) => {
+        card.style.cursor = "pointer";
+        card.addEventListener("click", (event) => {
+            if (!event.target.closest("a, button")) {
+                window.location.href = card.dataset.workUrl;
+            }
+        });
+        card.addEventListener("keydown", (event) => {
+            if (event.target === card && (event.key === "Enter" || event.key === " ")) {
+                event.preventDefault();
+                window.location.href = card.dataset.workUrl;
+            }
+        });
+    });
+</script>
+
+    </body>
+</html>
